@@ -19,3 +19,5 @@ SPDX-License-Identifier: GPL-2.0-or-later
  <a href="https://github.com/shadLaunchers/shadLauncher4/stargazers">
         <img src="https://img.shields.io/github/stars/shadLaunchers/shadLauncher4" width="120">
 </h1>
+
+Translations can be done in crowdin page : https://crowdin.com/project/shadlauncher4
