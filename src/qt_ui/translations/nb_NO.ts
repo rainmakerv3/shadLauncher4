@@ -2,570 +2,570 @@
 <!-- SPDX-FileCopyrightText: Copyright 2025 shadLauncher4 Project
      SPDX-License-Identifier: GPL-2.0-or-later -->
 <!DOCTYPE TS>
-<TS version="2.1" sourcelanguage="en_US" language="pt-PT">
+<TS version="2.1" sourcelanguage="en_US" language="nb">
   <context>
     <name>CryptoManagerDialog</name>
     <message>
       <source>Crypto Key Manager</source>
-      <translation type="unfinished">Crypto Key Manager</translation>
+      <translation>Kryptonøkkel-behandler</translation>
     </message>
     <message>
       <source>Trophy Key: Used for trophy decryption.
 Must be a valid hex string with even length.</source>
-      <translation type="unfinished">Trophy Key: Used for trophy decryption.
-Must be a valid hex string with even length.</translation>
+      <translation>Trofénøkkel: Brukes for dekryptering av trofeer.
+Må være en gyldig sekskantede tekststreng med partallslengde.</translation>
     </message>
     <message>
       <source>Enter Trophy Key (hex)</source>
-      <translation type="unfinished">Enter Trophy Key (hex)</translation>
+      <translation>Skriv inn trofénøkkel (sekskantede)</translation>
     </message>
     <message>
       <source>Trophy Key:</source>
-      <translation type="unfinished">Trophy Key:</translation>
+      <translation>Trofénøkkel:</translation>
     </message>
     <message>
       <source>Status: Not loaded</source>
-      <translation type="unfinished">Status: Not loaded</translation>
+      <translation>Status: Ikke lastet</translation>
     </message>
     <message>
       <source>Trophy Key</source>
-      <translation type="unfinished">Trophy Key</translation>
+      <translation>Trofénøkkel</translation>
     </message>
     <message>
       <source>%1:</source>
-      <translation type="unfinished">%1:</translation>
+      <translation>%1:</translation>
     </message>
     <message>
       <source>Enter %1 (hex)</source>
-      <translation type="unfinished">Enter %1 (hex)</translation>
+      <translation>Skriv inn %1 (sekskantede)</translation>
     </message>
     <message>
       <source>Exponent1</source>
-      <translation type="unfinished">Exponent1</translation>
+      <translation>Eksponent 1</translation>
     </message>
     <message>
       <source>Exponent2</source>
-      <translation type="unfinished">Exponent2</translation>
+      <translation>Eksponent 2</translation>
     </message>
     <message>
       <source>Public Exponent</source>
-      <translation type="unfinished">Public Exponent</translation>
+      <translation>Offentlig eksponent</translation>
     </message>
     <message>
       <source>Coefficient</source>
-      <translation type="unfinished">Coefficient</translation>
+      <translation>Koeffisient</translation>
     </message>
     <message>
       <source>Modulus</source>
-      <translation type="unfinished">Modulus</translation>
+      <translation>Heltallsdivisjon</translation>
     </message>
     <message>
       <source>Prime 1</source>
-      <translation type="unfinished">Prime 1</translation>
+      <translation>Primtall 1</translation>
     </message>
     <message>
       <source>Prime 2</source>
-      <translation type="unfinished">Prime 2</translation>
+      <translation>Primtall 2</translation>
     </message>
     <message>
       <source>Private Exponent</source>
-      <translation type="unfinished">Private Exponent</translation>
+      <translation>Privat eksponent</translation>
     </message>
     <message>
       <source>Fake Keyset</source>
-      <translation type="unfinished">Fake Keyset</translation>
+      <translation>Falsk nøkkelsett</translation>
     </message>
     <message>
       <source>RSA key components for fake signing.
 All fields must be valid hex strings with even length.</source>
-      <translation type="unfinished">RSA key components for fake signing.
-All fields must be valid hex strings with even length.</translation>
+      <translation>RSA-nøkkelkomponenter for falsk signering.
+Alle felt må være en gyldig sekskantede tekststreng med partallslengde.</translation>
     </message>
     <message>
       <source>Debug Rif Keyset</source>
-      <translation type="unfinished">Debug Rif Keyset</translation>
+      <translation>Feilsøking av Rif-nøkkelsett</translation>
     </message>
     <message>
       <source>RSA key components for debug RIF files.
 All fields must be valid hex strings with even length.</source>
-      <translation type="unfinished">RSA key components for debug RIF files.
-All fields must be valid hex strings with even length.</translation>
+      <translation>RSA-nøkkelkomponenter for feilsøking av Rif-filer.
+Alle felt må være en gyldig sekskantede tekststreng med partallslengde.</translation>
     </message>
     <message>
       <source>Pkg Derived Key3</source>
-      <translation type="unfinished">Pkg Derived Key3</translation>
+      <translation>Pakkeavledet (pkg) nøkkel 3</translation>
     </message>
     <message>
       <source>RSA key components for package decryption.
 All fields must be valid hex strings with even length.</source>
-      <translation type="unfinished">RSA key components for package decryption.
-All fields must be valid hex strings with even length.</translation>
+      <translation>RSA-nøkkelkomponenter for dekryptering av pakker.
+Alle felt må være en gyldig sekskantede tekststreng med partallslengde.</translation>
     </message>
     <message>
       <source>Load All Keys</source>
-      <translation type="unfinished">Load All Keys</translation>
+      <translation>Last alle nøkler</translation>
     </message>
     <message>
       <source>Save All Keys</source>
-      <translation type="unfinished">Save All Keys</translation>
+      <translation>Lagre alle nøkler</translation>
     </message>
     <message>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Lukk</translation>
     </message>
     <message>
       <source>Warning</source>
-      <translation type="unfinished">Warning</translation>
+      <translation>Advarsel</translation>
     </message>
     <message>
       <source>No key file found or failed to load.
 Please enter your keys and save them.</source>
-      <translation type="unfinished">No key file found or failed to load.
-Please enter your keys and save them.</translation>
+      <translation>Feil ved lasting av nøkkelfila.
+Skriv inn nøklene og lagre dem.</translation>
     </message>
     <message>
       <source>Validation Error</source>
-      <translation type="unfinished">Validation Error</translation>
+      <translation>Feil ved validering</translation>
     </message>
     <message>
       <source>Please fix invalid hex values before saving.</source>
-      <translation type="unfinished">Please fix invalid hex values before saving.</translation>
+      <translation>Rett opp i ugyldige sekskantede verdier før lagring.</translation>
     </message>
     <message>
       <source>Success</source>
-      <translation type="unfinished">Success</translation>
+      <translation>Vellykket</translation>
     </message>
     <message>
       <source>Keys saved successfully!</source>
-      <translation type="unfinished">Keys saved successfully!</translation>
+      <translation>Lagret nøklene på vellykket vis!</translation>
     </message>
     <message>
       <source>Error</source>
-      <translation type="unfinished">Error</translation>
+      <translation>Feil</translation>
     </message>
     <message>
       <source>Failed to save keys!</source>
-      <translation type="unfinished">Failed to save keys!</translation>
+      <translation>Feil ved lagring av nøklene.</translation>
     </message>
     <message>
       <source>Status: All fields empty</source>
-      <translation type="unfinished">Status: All fields empty</translation>
+      <translation>Status: Alle felt er tomme</translation>
     </message>
     <message>
       <source>Status: Invalid hex values</source>
-      <translation type="unfinished">Status: Invalid hex values</translation>
+      <translation>Status: Ugyldige sekskantede verdier</translation>
     </message>
     <message>
       <source>Status: Incomplete</source>
-      <translation type="unfinished">Status: Incomplete</translation>
+      <translation>Status: Ikke-fullført</translation>
     </message>
     <message>
       <source>Status: Valid</source>
-      <translation type="unfinished">Status: Valid</translation>
+      <translation>Status: Gyldig</translation>
     </message>
     <message>
       <source>Invalid File</source>
-      <translation type="unfinished">Invalid File</translation>
+      <translation>Ugyldig fil</translation>
     </message>
     <message>
       <source>Only JSON files are supported.</source>
-      <translation type="unfinished">Only JSON files are supported.</translation>
+      <translation>Støtter kun JSON-filer.</translation>
     </message>
     <message>
       <source>Unable to open file.</source>
-      <translation type="unfinished">Unable to open file.</translation>
+      <translation>Klarte ikke åpne fila.</translation>
     </message>
     <message>
       <source>JSON Error</source>
-      <translation type="unfinished">JSON Error</translation>
+      <translation>Feil ved JSON</translation>
     </message>
     <message>
       <source>Invalid JSON format.</source>
-      <translation type="unfinished">Invalid JSON format.</translation>
+      <translation>Ugyldig JSON-format.</translation>
     </message>
     <message>
       <source>Keys successfully loaded from JSON!</source>
-      <translation type="unfinished">Keys successfully loaded from JSON!</translation>
+      <translation>Lastet nøklene fra JSON-fila på vellykket vis!</translation>
     </message>
   </context>
   <context>
     <name>Downloader</name>
     <message>
       <source>Please wait...</source>
-      <translation>Por favor, aguarde...</translation>
+      <translation>Vent litt …</translation>
     </message>
     <message>
       <source>Abort</source>
-      <translation>Abortar</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <source>Local file missing after 304.</source>
-      <translation>Ficheiro local em falta após 304.</translation>
+      <translation>Mangler lokal fil etter 304.</translation>
     </message>
     <message>
       <source>Unknown network error</source>
-      <translation>Erro de rede desconhecido</translation>
+      <translation>Ukjent nettverksfeil</translation>
     </message>
     <message>
       <source>Cannot write output file.</source>
-      <translation>Não foi possível gravar o ficheiro de saída.</translation>
+      <translation>Klarte ikke skrive utdatafil.</translation>
     </message>
   </context>
   <context>
     <name>GameCompatibility</name>
     <message>
       <source>Playable</source>
-      <translation>Jogável</translation>
+      <translation>Spillbar</translation>
     </message>
     <message>
       <source>Games that can be run without any major issues</source>
-      <translation>Jogos que podem ser corridos sem problemas significativos</translation>
+      <translation>Spill som kan kjøres uten store feil.</translation>
     </message>
     <message>
       <source>Ingame</source>
-      <translation>Entra no Jogo</translation>
+      <translation>I spill</translation>
     </message>
     <message>
       <source>Games that can reach gameplay but have issues</source>
-      <translation>Jogos que conseguem ser corridos mas apresentam problemas</translation>
+      <translation>Spill som kan kjøres men med noen feil.</translation>
     </message>
     <message>
       <source>Menus</source>
-      <translation type="unfinished">Menus</translation>
+      <translation>I meny</translation>
     </message>
     <message>
       <source>Games that can reach the menu but freeze/crash when trying to proceed further</source>
-      <translation>Jogos que chegam ao menu mas bloqueiam/travam ao tentar prosseguir</translation>
+      <translation>Spill som kan nå menyene men ellers fryser/krasjer når man prøver å gå videre.</translation>
     </message>
     <message>
       <source>Boots</source>
-      <translation>Arranca</translation>
+      <translation>Starter opp</translation>
     </message>
     <message>
       <source>Games that show any visual/audio output but freeze/crash before reaching the menu</source>
-      <translation>Jogos que mostram algum output visual/áudio mas bloqueiam/travam antes de chegar ao menu</translation>
+      <translation>Spill som viser bilde-/lyd-utgang, men ellers fryser/krasjer når man prøver å nå menyen.</translation>
     </message>
     <message>
       <source>Nothing</source>
-      <translation>Nada</translation>
+      <translation>Ingenting</translation>
     </message>
     <message>
       <source>Games that crash when trying to launch or only show a black screen</source>
-      <translation>Jogos que travam ao iniciar ou apenas mostram um ecrã preto</translation>
+      <translation>Spill som krasjer når man prøver å starte eller viser et svart bilde.</translation>
     </message>
     <message>
       <source>No results found</source>
-      <translation>Nenhum resultado encontrado</translation>
+      <translation>Fant ingen resultater</translation>
     </message>
     <message>
       <source>There is no entry for this game or application in the compatibility database yet.</source>
-      <translation>Ainda não existe nenhuma entrada para este jogo ou aplicação na base de dados de compatibilidade.</translation>
+      <translation>Det finnes ingen oppføring for dette spillet eller programmet i kompatibilitets databasen enda.</translation>
     </message>
     <message>
       <source>Database missing</source>
-      <translation>Base de dados em falta</translation>
+      <translation>Mangler database</translation>
     </message>
     <message>
       <source>Retrieving...</source>
-      <translation>A obter...</translation>
+      <translation>Henter …</translation>
     </message>
     <message>
       <source>Downloading the compatibility database. Please wait...</source>
-      <translation>A transferir a base de dados de compatibilidade. Por favor, aguarde...</translation>
+      <translation>Laster ned kompatibilitets databasen. Vent litt …</translation>
     </message>
     <message>
       <source>Downloading Compatibility Database</source>
-      <translation>A transferir base de dados de compatibilidade</translation>
+      <translation>Laster ned kompatibilitets databasen</translation>
     </message>
     <message>
       <source>Error Downloading Compatibility Database</source>
-      <translation>Erro ao transferir a base de dados de compatibilidade</translation>
+      <translation>Feil ved nedlasting av kompatibilitets database</translation>
     </message>
     <message>
       <source>Right click here and choose Compatibility -&gt; Update Database.</source>
-      <translation>Clique com o botão direito aqui e escolha Compatibilidade -&gt; Atualizar Base de Dados.</translation>
+      <translation>«Høyre klikk» her og velg «Kompatibilitet» → «Oppdater database».</translation>
     </message>
   </context>
   <context>
     <name>GameInstallDialog</name>
     <message>
       <source>shadLauncher4 - Choose directory</source>
-      <translation>shadLauncher4 - Escolhe diretório</translation>
+      <translation>shadLauncher4 - Velg sti</translation>
     </message>
     <message>
       <source>Directory with your dumped games</source>
-      <translation>Diretório com os teus jogos extraídos</translation>
+      <translation>Sti med dumpede spill</translation>
     </message>
     <message>
       <source>Directory to install emulator versions</source>
-      <translation>Diretório para instalar versões do emulador</translation>
+      <translation>Sti for installasjon av emulator-versjoner</translation>
     </message>
     <message>
       <source>Directory with games</source>
-      <translation>Diretório com jogos</translation>
+      <translation>Sti med spill</translation>
     </message>
     <message>
       <source>Browse</source>
-      <translation>Procurar</translation>
+      <translation>Bla gjennom</translation>
     </message>
     <message>
       <source>Error</source>
-      <translation>Erro</translation>
+      <translation>Feil</translation>
     </message>
     <message>
       <source>Directory with DLCs</source>
-      <translation type="unfinished">Directory with DLCs</translation>
+      <translation>Mappe med nedlastbart innhold</translation>
     </message>
     <message>
       <source>Directory with your dumped DLCs</source>
-      <translation type="unfinished">Directory with your dumped DLCs</translation>
+      <translation>Mappe med dumpet nedlastbart innhold</translation>
     </message>
     <message>
       <source>The chosen location for dumped games is not valid.</source>
-      <translation type="unfinished">The chosen location for dumped games is not valid.</translation>
+      <translation>Ugyldig adresse for dumpede spill.</translation>
     </message>
     <message>
       <source>The chosen location for dumped DLCs is not valid.</source>
-      <translation type="unfinished">The chosen location for dumped DLCs is not valid.</translation>
+      <translation>Ugyldig adresse for dumpet nedlastbart innhold.</translation>
     </message>
     <message>
       <source>The DLC dump location could not be created.</source>
-      <translation type="unfinished">The DLC dump location could not be created.</translation>
+      <translation>Feil ved opprettelse av mappe for dumpet nedlastbart innhold.</translation>
     </message>
     <message>
       <source>The location for installing emulator versions is not valid.</source>
-      <translation type="unfinished">The location for installing emulator versions is not valid.</translation>
+      <translation>Ugyldig adresse for installasjon av emulatorversjoner.</translation>
     </message>
     <message>
       <source>The emulator version location could not be created.</source>
-      <translation type="unfinished">The emulator version location could not be created.</translation>
+      <translation>Feil ved opprettelse av mappe for emulatorversjoner.</translation>
     </message>
   </context>
   <context>
     <name>GameListFrame</name>
     <message>
       <source>Game List</source>
-      <translation>Lista de Jogos</translation>
+      <translation>Spilliste</translation>
     </message>
     <message>
       <source>Icon</source>
-      <translation>Ícone</translation>
+      <translation>Ikon</translation>
     </message>
     <message>
       <source>Show Icons</source>
-      <translation>Mostrar Ícones</translation>
+      <translation>Vis ikoner</translation>
     </message>
     <message>
       <source>Name</source>
-      <translation>Nome</translation>
+      <translation>Navn</translation>
     </message>
     <message>
       <source>Show Names</source>
-      <translation>Mostrar Nomes</translation>
+      <translation>Vis navn</translation>
     </message>
     <message>
       <source>Compatibility</source>
-      <translation>Compatibilidade</translation>
+      <translation>Kompatibilitet</translation>
     </message>
     <message>
       <source>Show Compatibility</source>
-      <translation>Mostrar Compatibilidade</translation>
+      <translation>Vis kompatibilitet</translation>
     </message>
     <message>
       <source>Serial</source>
-      <translation>Número de série</translation>
+      <translation>Serienummer</translation>
     </message>
     <message>
       <source>Show Serials</source>
-      <translation>Mostrar Números de série</translation>
+      <translation>Vis serienummer</translation>
     </message>
     <message>
       <source>Region</source>
-      <translation>Região</translation>
+      <translation>Region</translation>
     </message>
     <message>
       <source>Show Regions</source>
-      <translation>Mostrar Regiões</translation>
+      <translation>Vis regioner</translation>
     </message>
     <message>
       <source>Firmware</source>
-      <translation type="unfinished">Firmware</translation>
+      <translation>Fastvare</translation>
     </message>
     <message>
       <source>Show Firmwares</source>
-      <translation>Mostrar Firmwares</translation>
+      <translation>Vis fastvarer</translation>
     </message>
     <message>
       <source>Version</source>
-      <translation>Versão</translation>
+      <translation>Versjon</translation>
     </message>
     <message>
       <source>Show Versions</source>
-      <translation>Mostrar Versões</translation>
+      <translation>Vis versjoner</translation>
     </message>
     <message>
       <source>Last Played</source>
-      <translation>Última Vez Jogado</translation>
+      <translation>Sist spilt</translation>
     </message>
     <message>
       <source>Show Last Played</source>
-      <translation>Mostrar Última Vez Jogado</translation>
+      <translation>Vis sist spilt</translation>
     </message>
     <message>
       <source>Time Played</source>
-      <translation>Tempo Jogado</translation>
+      <translation>Spilletid</translation>
     </message>
     <message>
       <source>Show Time Played</source>
-      <translation>Mostrar Tempo Jogado</translation>
+      <translation>Vis spilletid</translation>
     </message>
     <message>
       <source>Space On Disk</source>
-      <translation>Espaço no Disco</translation>
+      <translation>Plass på disk</translation>
     </message>
     <message>
       <source>Show Space On Disk</source>
-      <translation>Mostrar Espaço no Disco</translation>
+      <translation>Vis plass på disk</translation>
     </message>
     <message>
       <source>Path</source>
-      <translation>Caminho</translation>
+      <translation>Sti</translation>
     </message>
     <message>
       <source>Show Paths</source>
-      <translation>Mostrar Caminhos</translation>
+      <translation>Vis sti</translation>
     </message>
     <message>
       <source>Loading games</source>
-      <translation>A carregar jogos</translation>
+      <translation>Laster spill</translation>
     </message>
     <message>
       <source>Loading games, please wait...</source>
-      <translation>A carregar jogos, por favor aguarde...</translation>
+      <translation>Laster spill, vent litt …</translation>
     </message>
     <message>
       <source>Cancel</source>
-      <translation>Cancelar</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <source>&amp;View Changelog</source>
-      <translation>&amp;Ver Lista de Alterações</translation>
+      <translation>&amp;Vis endringslogg</translation>
     </message>
     <message>
       <source>&amp;Copy Info</source>
-      <translation>&amp;Copiar Informação</translation>
+      <translation>&amp;Kopier info</translation>
     </message>
     <message>
       <source>&amp;Copy Name + Serial</source>
-      <translation>&amp;Copiar Nome + Número de série</translation>
+      <translation>&amp;Kopier navn og serienummer</translation>
     </message>
     <message>
       <source>&amp;Copy Name</source>
-      <translation>&amp;Copiar Nome</translation>
+      <translation>&amp;Kopier navn</translation>
     </message>
     <message>
       <source>&amp;Copy Serial</source>
-      <translation>&amp;Copiar Número de série</translation>
+      <translation>&amp;Kopier serienummer</translation>
     </message>
     <message>
       <source>&amp;Compatibility</source>
-      <translation>&amp;Compatibilidade</translation>
+      <translation>&amp;Kompatibilitet</translation>
     </message>
     <message>
       <source>&amp;View Report</source>
-      <translation>&amp;Ver Relatório</translation>
+      <translation>&amp;Vis rapport</translation>
     </message>
     <message>
       <source>&amp;Submit Report</source>
-      <translation>&amp;Enviar Relatório</translation>
+      <translation>&amp;Send inn rapport</translation>
     </message>
     <message>
       <source>&amp;Update Database</source>
-      <translation>&amp;Atualizar Base de Dados</translation>
+      <translation>&amp;Oppdater database</translation>
     </message>
     <message>
       <source>&amp;Manage Game</source>
-      <translation>&amp;Gerir Jogo</translation>
+      <translation>&amp;Håndter spill</translation>
     </message>
     <message>
       <source>&amp;Hide From Game List</source>
-      <translation>&amp;Ocultar da Lista de Jogos</translation>
+      <translation>&amp;Skjul fra spilliste</translation>
     </message>
     <message>
       <source>&amp;Add/Edit Tooltip Notes</source>
-      <translation>&amp;Adicionar/Editar Notas</translation>
+      <translation>&amp;Legg til/rediger hjelpebobler</translation>
     </message>
     <message>
       <source>Edit Tooltip Notes</source>
-      <translation>Editar Notas</translation>
+      <translation>Rediger hjelpebobler</translation>
     </message>
     <message>
       <source>%0
 %1</source>
-      <translation type="unfinished">%0
+      <translation>%0
 %1</translation>
     </message>
     <message>
       <source>Warning!</source>
-      <translation>Aviso!</translation>
+      <translation>Advarsel!</translation>
     </message>
     <message>
       <source>Failed to retrieve the online compatibility database!
 Using local database.
 
 %0</source>
-      <translation>Falha ao obter a base de dados de compatibilidade online!
-A usar a base de dados local.
+      <translation>Klarte ikke hente kompatibilitets databasen fra nettet!
+Bruker lokal database.
 
 %0</translation>
     </message>
     <message>
       <source>No Report Available</source>
-      <translation>Nenhum Relatório Disponível</translation>
+      <translation>Ingen rapport tilgjengelig</translation>
     </message>
     <message>
       <source>There is no compatibility report available for this game.</source>
-      <translation>Não existe nenhum relatório de compatibilidade disponível para este jogo.</translation>
+      <translation>Det er ingen kompatibilitets rapport tilgjengelig for dette spillet.</translation>
     </message>
     <message>
       <source>&amp;Open Folder</source>
-      <translation>&amp;Abrir Pasta</translation>
+      <translation>&amp;Åpne mappe</translation>
     </message>
     <message>
       <source>&amp;Open Game Folder</source>
-      <translation>&amp;Abrir Pasta do Jogo</translation>
+      <translation>&amp;Åpne spillmappe</translation>
     </message>
     <message>
       <source>&amp;Open Update Folder</source>
-      <translation>&amp;Abrir Pasta de Atualizações</translation>
+      <translation>&amp;Åpne oppdateringsmappa</translation>
     </message>
     <message>
       <source>&amp;Open Log Folder</source>
-      <translation>&amp;Abrir Pasta de Registos</translation>
+      <translation>&amp;Åpne loggmappe</translation>
     </message>
     <message>
       <source>Log Not Found</source>
-      <translation>Registo Não Encontrado</translation>
+      <translation>Fant ingen logg</translation>
     </message>
     <message>
       <source>No log file found for this game!</source>
-      <translation>Nenhum ficheiro de registo encontrado para este jogo!</translation>
+      <translation>Fant ingen loggfil for dette spillet!</translation>
     </message>
     <message>
       <source>Open Log Folder</source>
-      <translation>Abrir Pasta de Registos</translation>
+      <translation>Åpne loggmappe</translation>
     </message>
     <message>
       <source>&amp;SFO viewer</source>
-      <translation>&amp;Visualizador SFO</translation>
+      <translation>&amp;SFO-viser</translation>
     </message>
     <message>
       <source>&amp;npbind.dat viewer</source>
-      <translation type="unfinished">&amp;npbind.dat viewer</translation>
+      <translation>&amp;npbind.dat-viser</translation>
     </message>
     <message>
       <source>&amp;Ttrophy Viewer</source>
-      <translation type="unfinished">&amp;Ttrophy Viewer</translation>
+      <translation>&amp;Troféviser</translation>
     </message>
   </context>
   <context>
@@ -577,19 +577,19 @@ Notes:
 %2</source>
       <translation>%0 [%1]
 
-Notas:
+Notat:
 %2</translation>
     </message>
     <message>
       <source>%0 [%1]</source>
-      <translation type="unfinished">%0 [%1]</translation>
+      <translation>%0 [%1]</translation>
     </message>
   </context>
   <context>
     <name>GameListTable</name>
     <message>
       <source>Unknown</source>
-      <translation>Desconhecido</translation>
+      <translation>Ukjent</translation>
     </message>
     <message>
       <source>%0 [%1]
@@ -598,16 +598,16 @@ Notes:
 %2</source>
       <translation>%0 [%1]
 
-Notas:
+Notat:
 %2</translation>
     </message>
     <message>
       <source>Never played</source>
-      <translation>Nunca jogado</translation>
+      <translation>Aldri spilt</translation>
     </message>
     <message>
       <source>Japan</source>
-      <translation>Japão</translation>
+      <translation>Japan</translation>
     </message>
     <message>
       <source>Europe</source>
@@ -615,395 +615,395 @@ Notas:
     </message>
     <message>
       <source>USA</source>
-      <translation>EUA</translation>
+      <translation>USA</translation>
     </message>
     <message>
       <source>Asia</source>
-      <translation>Ásia</translation>
+      <translation>Asia</translation>
     </message>
     <message>
       <source>World</source>
-      <translation>Mundo</translation>
+      <translation>Verden</translation>
     </message>
     <message>
       <source>Last updated</source>
-      <translation>Última atualização</translation>
+      <translation>Sist oppdatert</translation>
     </message>
   </context>
   <context>
     <name>Localized</name>
     <message numerus="yes">
       <source>%Ln day(s)</source>
-      <translation type="unfinished">
-        <numerusform>%Ln dia(s)</numerusform>
-        <numerusform>%Ln day(s)</numerusform>
+      <translation>
+        <numerusform>%Ln dag(er)</numerusform>
+        <numerusform>%Ln dag(er)</numerusform>
       </translation>
     </message>
     <message numerus="yes">
       <source>%Ln hour(s)</source>
-      <translation type="unfinished">
-        <numerusform>%Ln hora(s)</numerusform>
-        <numerusform>%Ln hour(s)</numerusform>
+      <translation>
+        <numerusform>%Ln time(r)</numerusform>
+        <numerusform>%Ln time(r)</numerusform>
       </translation>
     </message>
     <message numerus="yes">
       <source>%Ln minute(s)</source>
-      <translation type="unfinished">
-        <numerusform>%Ln minuto(s)</numerusform>
-        <numerusform>%Ln minute(s)</numerusform>
+      <translation>
+        <numerusform>%Ln minutt(er)</numerusform>
+        <numerusform>%Ln minutt(er)</numerusform>
       </translation>
     </message>
     <message numerus="yes">
       <source>%Ln second(s)</source>
-      <translation type="unfinished">
-        <numerusform>%Ln segundo(s)</numerusform>
-        <numerusform>%Ln second(s)</numerusform>
+      <translation>
+        <numerusform>%Ln sekund(er)</numerusform>
+        <numerusform>%Ln sekund(er)</numerusform>
       </translation>
     </message>
     <message>
       <source>%0 and %1</source>
       <comment>Days and hours</comment>
-      <translation type="unfinished">%0 and %1</translation>
+      <translation>%0 og %1</translation>
     </message>
     <message>
       <source>%0 and %1</source>
       <comment>Hours and minutes</comment>
-      <translation type="unfinished">%0 and %1</translation>
+      <translation>%0 og %1</translation>
     </message>
     <message>
       <source>%0 and %1</source>
       <comment>Minutes and seconds</comment>
-      <translation type="unfinished">%0 and %1</translation>
+      <translation>%0 og %1</translation>
     </message>
   </context>
   <context>
     <name>MainWindow</name>
     <message>
       <source>Search...</source>
-      <translation>Pesquisar...</translation>
+      <translation>Søk …</translation>
     </message>
     <message>
       <source>File</source>
-      <translation>Ficheiro</translation>
+      <translation>Fil</translation>
     </message>
     <message>
       <source>Emulation</source>
-      <translation>Emulação</translation>
+      <translation>Emulering</translation>
     </message>
     <message>
       <source>Configuration</source>
-      <translation>Configuração</translation>
+      <translation>Oppsett</translation>
     </message>
     <message>
       <source>Manage</source>
-      <translation>Gerir</translation>
+      <translation>Håndter</translation>
     </message>
     <message>
       <source>Utilities</source>
-      <translation>Utilitários</translation>
+      <translation>Verktøy</translation>
     </message>
     <message>
       <source>View</source>
-      <translation>Ver</translation>
+      <translation>Vis</translation>
     </message>
     <message>
       <source>Game List Icons</source>
-      <translation>Ícones da Lista de Jogos</translation>
+      <translation>Spilliste ikoner</translation>
     </message>
     <message>
       <source>Game List Mode</source>
-      <translation>Modo da Lista de Jogos</translation>
+      <translation>Spilliste modus</translation>
     </message>
     <message>
       <source>Help</source>
-      <translation>Ajuda</translation>
+      <translation>Hjelp</translation>
     </message>
     <message>
       <source>Language</source>
-      <translation>Idioma</translation>
+      <translation>Språk</translation>
     </message>
     <message>
       <source>Show tool bar</source>
-      <translation>Mostrar barra de ferramentas</translation>
+      <translation>Vis verktøylinje</translation>
     </message>
     <message>
       <source>Open Game</source>
-      <translation>Abrir Jogo</translation>
+      <translation>Åpne spill</translation>
     </message>
     <message>
       <source>Pause</source>
-      <translation>Pausar</translation>
+      <translation>Pause</translation>
     </message>
     <message>
       <source>Start emulation</source>
-      <translation>Iniciar emulação</translation>
+      <translation>Start emulering</translation>
     </message>
     <message>
       <source>Stop</source>
-      <translation>Parar</translation>
+      <translation>Stopp</translation>
     </message>
     <message>
       <source>Stop emulation</source>
-      <translation>Parar emulação</translation>
+      <translation>Stopp emulering</translation>
     </message>
     <message>
       <source>GUI</source>
-      <translation>Interface Gráfica</translation>
+      <translation>Grensesnitt</translation>
     </message>
     <message>
       <source>Configure GUI settings</source>
-      <translation>Configurar definições da interface gráfica</translation>
+      <translation>Sett opp innstillinger for grensesnitt</translation>
     </message>
     <message>
       <source>Exit</source>
-      <translation>Sair</translation>
+      <translation>Avslutt</translation>
     </message>
     <message>
       <source>Exit the application.</source>
-      <translation>Sair da aplicação.</translation>
+      <translation>Avslutt programmet.</translation>
     </message>
     <message>
       <source>User Accounts</source>
-      <translation>Contas de Utilizador</translation>
+      <translation>Brukerkontoer</translation>
     </message>
     <message>
       <source>Manage user accounts</source>
-      <translation>Gerir contas de utilizador</translation>
+      <translation>Håndter brukerkontoer</translation>
     </message>
     <message>
       <source>Show Game List</source>
-      <translation>Mostrar Lista de Jogos</translation>
+      <translation>Vis spilliste</translation>
     </message>
     <message>
       <source>Show Tool Bar</source>
-      <translation>Mostrar Barra de Ferramentas</translation>
+      <translation>Vis verktøylinje</translation>
     </message>
     <message>
       <source>Show Game Compatibility in Grid Mode</source>
-      <translation>Mostrar Compatibilidade em Modo de Grelha</translation>
+      <translation>Vis spillkompatibilitet i rutenett</translation>
     </message>
     <message>
       <source>Game List Refresh</source>
-      <translation>Atualizar Lista de Jogos</translation>
+      <translation>Oppdater spilliste</translation>
     </message>
     <message>
       <source>Tiny</source>
-      <translation>Minúsculo</translation>
+      <translation>Bitteliten</translation>
     </message>
     <message>
       <source>Small</source>
-      <translation>Pequeno</translation>
+      <translation>Liten</translation>
     </message>
     <message>
       <source>Medium</source>
-      <translation>Médio</translation>
+      <translation>Middels</translation>
     </message>
     <message>
       <source>Large</source>
-      <translation>Grande</translation>
+      <translation>Stor</translation>
     </message>
     <message>
       <source>List View</source>
-      <translation>Vista em Lista</translation>
+      <translation>Listevisning</translation>
     </message>
     <message>
       <source>Grid View</source>
-      <translation>Vista em Grelha</translation>
+      <translation>Rutenettvisning</translation>
     </message>
     <message>
       <source>Restart</source>
-      <translation>Reiniciar</translation>
+      <translation>Start på nytt</translation>
     </message>
     <message>
       <source>Start</source>
-      <translation>Iniciar</translation>
+      <translation>Start</translation>
     </message>
     <message>
       <source>Settings</source>
-      <translation>Definições</translation>
+      <translation>Innstillinger</translation>
     </message>
     <message>
       <source>Configure the emulator</source>
-      <translation>Configurar o emulador</translation>
+      <translation>Sett opp emulatoren</translation>
     </message>
     <message>
       <source>Controllers</source>
-      <translation>Comandos</translation>
+      <translation>Kontroller</translation>
     </message>
     <message>
       <source>Configure controls</source>
-      <translation>Configurar comandos</translation>
+      <translation>Sett opp kontroller</translation>
     </message>
     <message>
       <source>Full Screen</source>
-      <translation>Ecrã Inteiro</translation>
+      <translation>Fullskjerm</translation>
     </message>
     <message>
       <source>Toggle fullscreen</source>
-      <translation>Alternar ecrã inteiro</translation>
+      <translation>Slå av/på fullskjerm</translation>
     </message>
     <message>
       <source>List</source>
-      <translation>Lista</translation>
+      <translation>Liste</translation>
     </message>
     <message>
       <source>Switch to list mode</source>
-      <translation>Mudar para modo lista</translation>
+      <translation>Bytt til listemodus</translation>
     </message>
     <message>
       <source>Grid</source>
-      <translation>Grelha</translation>
+      <translation>Rutenett</translation>
     </message>
     <message>
       <source>Switch to grid mode</source>
-      <translation>Mudar para modo grelha</translation>
+      <translation>Bytt til rutenettvisning</translation>
     </message>
     <message>
       <source>Refresh</source>
-      <translation>Atualizar</translation>
+      <translation>Oppdater</translation>
     </message>
     <message>
       <source>Refresh gamelist</source>
-      <translation>Atualizar lista de jogos</translation>
+      <translation>Oppdater spilliste</translation>
     </message>
     <message>
       <source>Show Hidden Entries</source>
-      <translation>Mostrar Entradas Ocultas</translation>
+      <translation>Vis skjulte oppføringer</translation>
     </message>
     <message>
       <source>Add Games</source>
-      <translation>Adicionar Jogos</translation>
+      <translation>Legg til spill</translation>
     </message>
     <message>
       <source>Show Title Bars</source>
-      <translation>Mostrar Barras de Título</translation>
+      <translation>Vis tittellinje</translation>
     </message>
     <message>
       <source>English</source>
-      <translation>Inglês</translation>
+      <translation>Engelsk</translation>
     </message>
     <message>
       <source>Show Custom Icons</source>
-      <translation>Mostrar Ícones Personalizados</translation>
+      <translation>Vis tilpassede ikoner</translation>
     </message>
     <message>
       <source>Play Hover Gifs</source>
-      <translation>Reproduzir GIFs ao Passar o Rato</translation>
+      <translation>Spill av svevende GIF</translation>
     </message>
     <message>
       <source>Prefer Game Data Icons</source>
-      <translation>Preferir Ícones do Jogo</translation>
+      <translation>Foretrekk spilldataikoner</translation>
     </message>
     <message>
       <source>shadLauncher4</source>
-      <translation type="unfinished">shadLauncher4</translation>
+      <translation>shadLauncher4</translation>
     </message>
     <message>
       <source>Exit shadLauncher4</source>
-      <translation>Sair do shadLauncher4</translation>
+      <translation>Avslutt shadLauncher4</translation>
     </message>
     <message>
       <source>About shadLauncher4</source>
-      <translation>Sobre o shadLauncher4</translation>
+      <translation>Om shadLauncher4</translation>
     </message>
     <message>
       <source>Export GameList</source>
-      <translation>Exportar Lista de Jogos</translation>
+      <translation>Eksporter spilliste</translation>
     </message>
     <message>
       <source>General</source>
-      <translation type="unfinished">General</translation>
+      <translation>Generelt</translation>
     </message>
     <message>
       <source>Graphics</source>
-      <translation type="unfinished">Graphics</translation>
+      <translation>Grafikk</translation>
     </message>
     <message>
       <source>User</source>
-      <translation type="unfinished">User</translation>
+      <translation>Bruker</translation>
     </message>
     <message>
       <source>Input</source>
-      <translation type="unfinished">Input</translation>
+      <translation>Inndata</translation>
     </message>
     <message>
       <source>Paths</source>
-      <translation type="unfinished">Paths</translation>
+      <translation>Sti</translation>
     </message>
     <message>
       <source>Debug</source>
-      <translation type="unfinished">Debug</translation>
+      <translation>Feilsøking</translation>
     </message>
     <message>
       <source>Experimental</source>
-      <translation type="unfinished">Experimental</translation>
+      <translation>Eksperimentell</translation>
     </message>
     <message>
       <source>Log</source>
-      <translation type="unfinished">Log</translation>
+      <translation>Logg</translation>
     </message>
     <message>
       <source>Crypto Key Manager</source>
-      <translation type="unfinished">Crypto Key Manager</translation>
+      <translation>Kryptonøkkel-behandler</translation>
     </message>
   </context>
   <context>
     <name>NpBindDialog</name>
     <message>
       <source>npbind.dat Viewer</source>
-      <translation type="unfinished">npbind.dat Viewer</translation>
+      <translation>npbind.dat-viser</translation>
     </message>
     <message>
       <source>Error</source>
-      <translation type="unfinished">Error</translation>
+      <translation>Feil</translation>
     </message>
     <message>
       <source>Failed to parse npbind.dat</source>
-      <translation type="unfinished">Failed to parse npbind.dat</translation>
+      <translation>Feil ved tolkning av npbind.dat-fila</translation>
     </message>
     <message>
       <source>Entry Type:</source>
-      <translation type="unfinished">Entry Type:</translation>
+      <translation>Oppføringstype:</translation>
     </message>
     <message>
       <source>Entry Size:</source>
-      <translation type="unfinished">Entry Size:</translation>
+      <translation>Oppføringsstørrelse:</translation>
     </message>
     <message>
       <source>NPCommID:</source>
-      <translation type="unfinished">NPCommID:</translation>
+      <translation>NPCommID:</translation>
     </message>
     <message>
       <source>Trophy ID:</source>
-      <translation type="unfinished">Trophy ID:</translation>
+      <translation>Trofé-ID:</translation>
     </message>
     <message>
       <source>Hex Data:</source>
-      <translation type="unfinished">Hex Data:</translation>
+      <translation>Sekskantede data:</translation>
     </message>
     <message>
       <source>NPCommID</source>
-      <translation type="unfinished">NPCommID</translation>
+      <translation>NPCommID</translation>
     </message>
     <message>
       <source>Trophy</source>
-      <translation type="unfinished">Trophy</translation>
+      <translation>Trofé</translation>
     </message>
     <message>
       <source>Unknown 1</source>
-      <translation type="unfinished">Unknown 1</translation>
+      <translation>Ukjent 1</translation>
     </message>
     <message>
       <source>Unknown 2</source>
-      <translation type="unfinished">Unknown 2</translation>
+      <translation>Ukjent 2</translation>
     </message>
     <message>
       <source>Show regions:</source>
-      <translation type="unfinished">Show regions:</translation>
+      <translation>Vis regioner:</translation>
     </message>
     <message>
       <source>Export JSON</source>
-      <translation type="unfinished">Export JSON</translation>
+      <translation>Eksporter JSON</translation>
     </message>
     <message>
       <source>Body #%1</source>
@@ -1011,876 +1011,876 @@ Notas:
     </message>
     <message>
       <source>JSON Files (*.json)</source>
-      <translation type="unfinished">JSON Files (*.json)</translation>
+      <translation>JSON-filer (*.json)</translation>
     </message>
     <message>
       <source>Cannot write file</source>
-      <translation type="unfinished">Cannot write file</translation>
+      <translation>Klarte ikke skrive til fila</translation>
     </message>
     <message>
       <source>Done</source>
-      <translation type="unfinished">Done</translation>
+      <translation>Fullført</translation>
     </message>
     <message>
       <source>JSON exported successfully.</source>
-      <translation type="unfinished">JSON exported successfully.</translation>
+      <translation>Eksporterte JSON på vellykket vis.</translation>
     </message>
   </context>
   <context>
     <name>QObject</name>
     <message>
       <source>Export Game List</source>
-      <translation>Exportar Lista de Jogos</translation>
+      <translation>Eksporter spilliste</translation>
     </message>
     <message>
       <source>Select export format:</source>
-      <translation>Selecionar formato de exportação:</translation>
+      <translation>Velg eksport format:</translation>
     </message>
     <message>
       <source>Sort by:</source>
-      <translation>Ordenar por:</translation>
+      <translation>Sorter etter:</translation>
     </message>
     <message>
       <source>Sort order:</source>
-      <translation>Ordem:</translation>
+      <translation>Sorteringsrekkefølge:</translation>
     </message>
     <message>
       <source>Include compatibility info</source>
-      <translation>Incluir informação de compatibilidade</translation>
+      <translation>Inkluder kompatibilitetsinfo</translation>
     </message>
     <message>
       <source>Export</source>
-      <translation>Exportar</translation>
+      <translation>Eksporter</translation>
     </message>
     <message>
       <source>Cancel</source>
-      <translation>Cancelar</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <source>Save Game List As</source>
-      <translation>Guardar Lista de Jogos Como</translation>
+      <translation>Lagre spilliste som</translation>
     </message>
     <message>
       <source>Error</source>
-      <translation>Erro</translation>
+      <translation>Feil</translation>
     </message>
     <message>
       <source>Failed to create file:
 %1</source>
-      <translation>Falha ao criar o ficheiro:
+      <translation>Klarte ikke opprette fil:
 %1</translation>
     </message>
     <message>
       <source>Game List Exported</source>
-      <translation>Lista de Jogos Exportada</translation>
+      <translation>Eksporterte spillista</translation>
     </message>
     <message>
       <source>Game list successfully exported to:
 %1</source>
-      <translation>Lista de jogos exportada com sucesso para:
+      <translation>Eksporterte spillista på vellykket vis til:
 %1</translation>
     </message>
     <message>
       <source>Exporting Game List</source>
-      <translation>A Exportar Lista de Jogos</translation>
+      <translation>Eksporterer spilliste</translation>
     </message>
     <message>
       <source>Exporting games to CSV...</source>
-      <translation>A exportar jogos para CSV...</translation>
+      <translation>Eksporterer spill til CSV-format …</translation>
     </message>
     <message>
       <source>Key</source>
-      <translation>Chave</translation>
+      <translation>Nøkkel</translation>
     </message>
     <message>
       <source>Value</source>
-      <translation>Valor</translation>
+      <translation>Verdi</translation>
     </message>
     <message>
       <source>Type</source>
-      <translation>Tipo</translation>
+      <translation>Type</translation>
     </message>
   </context>
   <context>
     <name>SFOViewerDialog</name>
     <message>
       <source>PS4 SFO Viewer</source>
-      <translation>Visualizador SFO PS4</translation>
+      <translation>PS4-SFO-viser</translation>
     </message>
     <message>
       <source>Reload</source>
-      <translation>Recarregar</translation>
+      <translation>Oppdater</translation>
     </message>
     <message>
       <source>Export</source>
-      <translation>Exportar</translation>
+      <translation>Eksporter</translation>
     </message>
     <message>
       <source>Open Folder</source>
-      <translation>Abrir Pasta</translation>
+      <translation>Åpne mappe</translation>
     </message>
     <message>
       <source>Copy Value</source>
-      <translation>Copiar Valor</translation>
+      <translation>Kopier verdi</translation>
     </message>
     <message>
       <source>Title: -</source>
-      <translation>Título: -</translation>
+      <translation>Tittel: -</translation>
     </message>
     <message>
       <source>Title ID: -</source>
-      <translation>ID do Título: -</translation>
+      <translation>Tittel-ID: -</translation>
     </message>
     <message>
       <source>Version: -</source>
-      <translation>Versão: -</translation>
+      <translation>Versjon: -</translation>
     </message>
     <message>
       <source>Localized Titles</source>
-      <translation>Títulos Localizados</translation>
+      <translation>Oversatte titler</translation>
     </message>
     <message>
       <source>Search...</source>
-      <translation>Pesquisar...</translation>
+      <translation>Søk …</translation>
     </message>
     <message>
       <source>Regex</source>
-      <translation type="unfinished">Regex</translation>
+      <translation>regulært</translation>
     </message>
     <message>
       <source>PSF Error</source>
-      <translation>Erro PSF</translation>
+      <translation>Feil ved PSF</translation>
     </message>
     <message>
       <source>Failed to load PSF file:
 %1</source>
-      <translation>Falha ao carregar ficheiro PSF:
+      <translation>Klarte ikke laste PSF-fil:
 %1</translation>
     </message>
     <message>
       <source>Title: %1</source>
-      <translation>Título: %1</translation>
+      <translation>Tittel: %1</translation>
     </message>
     <message>
       <source>Title ID: %1</source>
-      <translation>ID do Título: %1</translation>
+      <translation>Tittel-ID: %1</translation>
     </message>
     <message>
       <source>Version: %1</source>
-      <translation>Versão: %1</translation>
+      <translation>Versjon: %1</translation>
     </message>
     <message>
       <source>No Icon</source>
-      <translation>Sem Ícone</translation>
+      <translation>Ingen ikon</translation>
     </message>
     <message>
       <source>JSON (*.json);;CSV (*.csv);;HTML (*.html)</source>
-      <translation type="unfinished">JSON (*.json);;CSV (*.csv);;HTML (*.html)</translation>
+      <translation>JSON (*.json);;CSV (*.csv);;HTML (*.html)</translation>
     </message>
   </context>
   <context>
     <name>SettingsDialog</name>
     <message>
       <source>Settings</source>
-      <translation type="unfinished">Settings</translation>
+      <translation>Innstillinger</translation>
     </message>
     <message>
       <source>General</source>
-      <translation type="unfinished">General</translation>
+      <translation>Generelt</translation>
     </message>
     <message>
       <source>Audio Device (general)</source>
-      <translation type="unfinished">Audio Device (general)</translation>
+      <translation>Lydenhet (generelt)</translation>
     </message>
     <message>
       <source>Audio Device (DS4 speaker)</source>
-      <translation type="unfinished">Audio Device (DS4 speaker)</translation>
+      <translation>Lydenhet (DS4-høyttaler)</translation>
     </message>
     <message>
       <source>System</source>
-      <translation type="unfinished">System</translation>
+      <translation>System</translation>
     </message>
     <message>
       <source>Console Language</source>
-      <translation type="unfinished">Console Language</translation>
+      <translation>Konsollspråk</translation>
     </message>
     <message>
       <source>Volume</source>
-      <translation type="unfinished">Volume</translation>
+      <translation>Lydstyrke</translation>
     </message>
     <message>
       <source>Miscellaneous</source>
-      <translation type="unfinished">Miscellaneous</translation>
+      <translation>Diverse</translation>
     </message>
     <message>
       <source>Show Splash Screen When Launching Game</source>
-      <translation type="unfinished">Show Splash Screen When Launching Game</translation>
+      <translation>Vis velkomstbilde ved oppstart av spill</translation>
     </message>
     <message>
       <source>GUI</source>
-      <translation type="unfinished">GUI</translation>
+      <translation>Grensesnitt</translation>
     </message>
     <message>
       <source>General Frontend Settings</source>
-      <translation type="unfinished">General Frontend Settings</translation>
+      <translation>Grensesnitt-innstillinger</translation>
     </message>
     <message>
       <source>Enable Discord Rich Presence</source>
-      <translation type="unfinished">Enable Discord Rich Presence</translation>
+      <translation>Bruk Discord Rich Presence</translation>
     </message>
     <message>
       <source>GUI Language</source>
-      <translation type="unfinished">GUI Language</translation>
+      <translation>Grensesnittspråk</translation>
     </message>
     <message>
       <source>Background Image</source>
-      <translation type="unfinished">Background Image</translation>
+      <translation>Bakgrunnsbilde</translation>
     </message>
     <message>
       <source>Show Background Image</source>
-      <translation type="unfinished">Show Background Image</translation>
+      <translation>Vis bakgrunnsbilde</translation>
     </message>
     <message>
       <source>Opacity</source>
-      <translation type="unfinished">Opacity</translation>
+      <translation>Synlighet</translation>
     </message>
     <message>
       <source>Title Music</source>
-      <translation type="unfinished">Title Music</translation>
+      <translation>Tittelmusikk</translation>
     </message>
     <message>
       <source>Play title music</source>
-      <translation type="unfinished">Play title music</translation>
+      <translation>Spill av tittelmusikk</translation>
     </message>
     <message>
       <source>Set the volume of the background music.</source>
-      <translation type="unfinished">Set the volume of the background music.</translation>
+      <translation>Velg lydstyrken til bakgrunnsmusikken.</translation>
     </message>
     <message>
       <source>Trophy Key</source>
-      <translation type="unfinished">Trophy Key</translation>
+      <translation>Trofénøkkel</translation>
     </message>
     <message>
       <source>Game Compatibility</source>
-      <translation type="unfinished">Game Compatibility</translation>
+      <translation>Spill kompatibilitet</translation>
     </message>
     <message>
       <source>Update Compatibility Database On Startup</source>
-      <translation type="unfinished">Update Compatibility Database On Startup</translation>
+      <translation>Oppdater database ved oppstart</translation>
     </message>
     <message>
       <source>Update Compatibility Database</source>
-      <translation type="unfinished">Update Compatibility Database</translation>
+      <translation>Oppdater kompatibilitets-database</translation>
     </message>
     <message>
       <source>GUI Updates</source>
-      <translation type="unfinished">GUI Updates</translation>
+      <translation>Grensesnitt oppdateringer</translation>
     </message>
     <message>
       <source>Check for Updates at Startup</source>
-      <translation type="unfinished">Check for Updates at Startup</translation>
+      <translation>Se etter oppdateringer ved oppstart</translation>
     </message>
     <message>
       <source>Always Show Changelog</source>
-      <translation type="unfinished">Always Show Changelog</translation>
+      <translation>Vis alltid endringsloggen</translation>
     </message>
     <message>
       <source>Check for Updates</source>
-      <translation type="unfinished">Check for Updates</translation>
+      <translation>Se etter oppdateringer</translation>
     </message>
     <message>
       <source>Directory Scan Depth</source>
-      <translation type="unfinished">Directory Scan Depth</translation>
+      <translation>Søkingsdybde for sti</translation>
     </message>
     <message>
       <source>1</source>
-      <translation type="unfinished">1</translation>
+      <translation>1</translation>
     </message>
     <message>
       <source>2</source>
-      <translation type="unfinished">2</translation>
+      <translation>2</translation>
     </message>
     <message>
       <source>3</source>
-      <translation type="unfinished">3</translation>
+      <translation>3</translation>
     </message>
     <message>
       <source>Graphics</source>
-      <translation type="unfinished">Graphics</translation>
+      <translation>Grafikk</translation>
     </message>
     <message>
       <source>Graphics Device</source>
-      <translation type="unfinished">Graphics Device</translation>
+      <translation>Grafikkenhet</translation>
     </message>
     <message>
       <source>Enable NULL GPU</source>
-      <translation type="unfinished">Enable NULL GPU</translation>
+      <translation>Bruk NULL GPU</translation>
     </message>
     <message>
       <source>Video</source>
-      <translation type="unfinished">Video</translation>
+      <translation>Video</translation>
     </message>
     <message>
       <source>Display Mode</source>
-      <translation type="unfinished">Display Mode</translation>
+      <translation>Skjermmodus</translation>
     </message>
     <message>
       <source>Windowed</source>
-      <translation type="unfinished">Windowed</translation>
+      <translation>I vindu</translation>
     </message>
     <message>
       <source>Fullscreen</source>
-      <translation type="unfinished">Fullscreen</translation>
+      <translation>Fullskjerm</translation>
     </message>
     <message>
       <source>Fullscreen (Borderless)</source>
-      <translation type="unfinished">Fullscreen (Borderless)</translation>
+      <translation>Fullskjerm i vindu</translation>
     </message>
     <message>
       <source>Present Mode</source>
-      <translation type="unfinished">Present Mode</translation>
+      <translation>Presentasjonsmodus</translation>
     </message>
     <message>
       <source>Mailbox (Vsync)</source>
-      <translation type="unfinished">Mailbox (Vsync)</translation>
+      <translation>«Mailbox» (Vsync)</translation>
     </message>
     <message>
       <source>Fifo (Vsync)</source>
-      <translation type="unfinished">Fifo (Vsync)</translation>
+      <translation>«FIFO» (Vsync)</translation>
     </message>
     <message>
       <source>Immediate (No Vsync)</source>
-      <translation type="unfinished">Immediate (No Vsync)</translation>
+      <translation>Umiddelbart (Ingen Vsync)</translation>
     </message>
     <message>
       <source>Window Size</source>
-      <translation type="unfinished">Window Size</translation>
+      <translation>Vindustørrelse</translation>
     </message>
     <message>
       <source>W:</source>
-      <translation type="unfinished">W:</translation>
+      <translation>B:</translation>
     </message>
     <message>
       <source>H:</source>
-      <translation type="unfinished">H:</translation>
+      <translation>H:</translation>
     </message>
     <message>
       <source>Enable HDR</source>
-      <translation type="unfinished">Enable HDR</translation>
+      <translation>Bruk HDR</translation>
     </message>
     <message>
       <source>FSR Settings</source>
-      <translation type="unfinished">FSR Settings</translation>
+      <translation>FSR-innstillinger</translation>
     </message>
     <message>
       <source>Enable FSR</source>
-      <translation type="unfinished">Enable FSR</translation>
+      <translation>Bruk FSR</translation>
     </message>
     <message>
       <source>Enable RCAS (sharpening)</source>
-      <translation type="unfinished">Enable RCAS (sharpening)</translation>
+      <translation>Bruk RCAS (tydeliggjøring)</translation>
     </message>
     <message>
       <source>RCAS Attenuation:</source>
-      <translation type="unfinished">RCAS Attenuation:</translation>
+      <translation>RCAS demping:</translation>
     </message>
     <message>
       <source>User</source>
-      <translation type="unfinished">User</translation>
+      <translation>Bruker</translation>
     </message>
     <message>
       <source>Username</source>
-      <translation type="unfinished">Username</translation>
+      <translation>Brukernavn</translation>
     </message>
     <message>
       <source>Trophy</source>
-      <translation type="unfinished">Trophy</translation>
+      <translation>Trofé</translation>
     </message>
     <message>
       <source>Disable Trophy Notification</source>
-      <translation type="unfinished">Disable Trophy Notification</translation>
+      <translation>Slå av trofévarsler</translation>
     </message>
     <message>
       <source>Trophy Notification Position</source>
-      <translation type="unfinished">Trophy Notification Position</translation>
+      <translation>Trofévarsel plassering</translation>
     </message>
     <message>
       <source>Left</source>
-      <translation type="unfinished">Left</translation>
+      <translation>Venstre</translation>
     </message>
     <message>
       <source>Right</source>
-      <translation type="unfinished">Right</translation>
+      <translation>Høyre</translation>
     </message>
     <message>
       <source>Top</source>
-      <translation type="unfinished">Top</translation>
+      <translation>Øverst</translation>
     </message>
     <message>
       <source>Bottom</source>
-      <translation type="unfinished">Bottom</translation>
+      <translation>Nederst</translation>
     </message>
     <message>
       <source>Notification Duration</source>
-      <translation type="unfinished">Notification Duration</translation>
+      <translation>Varslingsvarighet</translation>
     </message>
     <message>
       <source>Open the custom trophy images/sounds folder</source>
-      <translation type="unfinished">Open the custom trophy images/sounds folder</translation>
+      <translation>Åpne mappa med tilpassede bilder og lyder for trofé</translation>
     </message>
     <message>
       <source>Portable User Folder</source>
-      <translation type="unfinished">Portable User Folder</translation>
+      <translation>Separat brukermappe</translation>
     </message>
     <message>
       <source>Create Portable User Folder from Common User Folder</source>
-      <translation type="unfinished">Create Portable User Folder from Common User Folder</translation>
+      <translation>Lag ny separat brukermappe fra fellesbrukermappa</translation>
     </message>
     <message>
       <source>Input</source>
-      <translation type="unfinished">Input</translation>
+      <translation>Inndata</translation>
     </message>
     <message>
       <source>Cursor</source>
-      <translation type="unfinished">Cursor</translation>
+      <translation>Musepeker</translation>
     </message>
     <message>
       <source>Hide Cursor</source>
-      <translation type="unfinished">Hide Cursor</translation>
+      <translation>Skjul musepeker</translation>
     </message>
     <message>
       <source>Hide Cursor Idle Timeout</source>
-      <translation type="unfinished">Hide Cursor Idle Timeout</translation>
+      <translation>Skjul musepeker ved inaktivitet</translation>
     </message>
     <message>
       <source>s</source>
-      <translation type="unfinished">s</translation>
+      <translation>s</translation>
     </message>
     <message>
       <source>Controller</source>
-      <translation type="unfinished">Controller</translation>
+      <translation>Kontroller</translation>
     </message>
     <message>
       <source>Enable Motion Controls</source>
-      <translation type="unfinished">Enable Motion Controls</translation>
+      <translation>Bruk bevegelsesstyring</translation>
     </message>
     <message>
       <source>Enable Background Controller Input</source>
-      <translation type="unfinished">Enable Background Controller Input</translation>
+      <translation>Bruk kontroller inndata ved mangel på fokus</translation>
     </message>
     <message>
       <source>Microphone</source>
-      <translation type="unfinished">Microphone</translation>
+      <translation>Mikrofon</translation>
     </message>
     <message>
       <source>USB Device</source>
-      <translation type="unfinished">USB Device</translation>
+      <translation>USB-enhet</translation>
     </message>
     <message>
       <source>Paths</source>
-      <translation type="unfinished">Paths</translation>
+      <translation>Sti</translation>
     </message>
     <message>
       <source>Game Folders</source>
-      <translation type="unfinished">Game Folders</translation>
+      <translation>Spillmapper</translation>
     </message>
     <message>
       <source>Add...</source>
-      <translation type="unfinished">Add...</translation>
+      <translation>Legg til …</translation>
     </message>
     <message>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Fjern</translation>
     </message>
     <message>
       <source>DLC Path</source>
-      <translation type="unfinished">DLC Path</translation>
+      <translation>Sti for nedlastbart innhold</translation>
     </message>
     <message>
       <source>Browse</source>
-      <translation type="unfinished">Browse</translation>
+      <translation>Endre mappe</translation>
     </message>
     <message>
       <source>Home Path</source>
-      <translation type="unfinished">Home Path</translation>
+      <translation>Hjemmesti</translation>
     </message>
     <message>
       <source>PS4 Sysmodules Path</source>
-      <translation type="unfinished">PS4 Sysmodules Path</translation>
+      <translation>PS4 «sys_modules»-sti</translation>
     </message>
     <message>
       <source>Log</source>
-      <translation type="unfinished">Log</translation>
+      <translation>Logg</translation>
     </message>
     <message>
       <source>Logger</source>
-      <translation type="unfinished">Logger</translation>
+      <translation>Loggføring</translation>
     </message>
     <message>
       <source>Enable Logging</source>
-      <translation type="unfinished">Enable Logging</translation>
+      <translation>Bruk loggføring</translation>
     </message>
     <message>
       <source>Separate Log Files</source>
-      <translation type="unfinished">Separate Log Files</translation>
+      <translation>Separate loggfiler</translation>
     </message>
     <message>
       <source>Log Type</source>
-      <translation type="unfinished">Log Type</translation>
+      <translation>Loggføringstype</translation>
     </message>
     <message>
       <source>async</source>
-      <translation type="unfinished">async</translation>
+      <translation>asynkron</translation>
     </message>
     <message>
       <source>sync</source>
-      <translation type="unfinished">sync</translation>
+      <translation>synkron</translation>
     </message>
     <message>
       <source>Log Filter</source>
-      <translation type="unfinished">Log Filter</translation>
+      <translation>Loggfilter</translation>
     </message>
     <message>
       <source>Load Presets...</source>
-      <translation type="unfinished">Load Presets...</translation>
+      <translation>Last inn forhåndsinnstillinger …</translation>
     </message>
     <message>
       <source>Open Log Location</source>
-      <translation type="unfinished">Open Log Location</translation>
+      <translation>Åpne loggplassering</translation>
     </message>
     <message>
       <source>Debug</source>
-      <translation type="unfinished">Debug</translation>
+      <translation>Feilsøking</translation>
     </message>
     <message>
       <source>Enable Shaders Dumping</source>
-      <translation type="unfinished">Enable Shaders Dumping</translation>
+      <translation>Bruk skyggeleggerdumping</translation>
     </message>
     <message>
       <source>Enable Debug Dumping</source>
-      <translation type="unfinished">Enable Debug Dumping</translation>
+      <translation>Bruk feilsøkingsdumping</translation>
     </message>
     <message>
       <source>Enable RenderDoc Debugging</source>
-      <translation type="unfinished">Enable RenderDoc Debugging</translation>
+      <translation>Bruk RenderDoc feilsøking</translation>
     </message>
     <message>
       <source>Copy GPU Buffers</source>
-      <translation type="unfinished">Copy GPU Buffers</translation>
+      <translation>Kopier GPU-buffere</translation>
     </message>
     <message>
       <source>Advanced</source>
-      <translation type="unfinished">Advanced</translation>
+      <translation>Avansert</translation>
     </message>
     <message>
       <source>Collect Shaders</source>
-      <translation type="unfinished">Collect Shaders</translation>
+      <translation>Lagre skyggeleggere</translation>
     </message>
     <message>
       <source>Enable Crash Diagnostics</source>
-      <translation type="unfinished">Enable Crash Diagnostics</translation>
+      <translation>Bruk krasjdiagnostikk</translation>
     </message>
     <message>
       <source>Host Debug Markers</source>
-      <translation type="unfinished">Host Debug Markers</translation>
+      <translation>Vertsfeilsøkingsmarkører</translation>
     </message>
     <message>
       <source>Guest Debug Markers</source>
-      <translation type="unfinished">Guest Debug Markers</translation>
+      <translation>Gjestefeilsøkingsmarkører</translation>
     </message>
     <message>
       <source>Vulkan Validation (Requires Vulkan SDK)</source>
-      <translation type="unfinished">Vulkan Validation (Requires Vulkan SDK)</translation>
+      <translation>Vulkan-validering (krever Vulkan SDK)</translation>
     </message>
     <message>
       <source>Enable Vulkan Validation Layers</source>
-      <translation type="unfinished">Enable Vulkan Validation Layers</translation>
+      <translation>Bruk Vulkan Validation Layers</translation>
     </message>
     <message>
       <source>Validation Layers</source>
-      <translation type="unfinished">Validation Layers</translation>
+      <translation>Valideringslag</translation>
     </message>
     <message>
       <source>Enable Core Validation</source>
-      <translation type="unfinished">Enable Core Validation</translation>
+      <translation>Bruk kjernevalidering</translation>
     </message>
     <message>
       <source>Enable Sync Validation</source>
-      <translation type="unfinished">Enable Sync Validation</translation>
+      <translation>Bruk synkroniseringsvalidering</translation>
     </message>
     <message>
       <source>Enable GPU-Assisted Validation</source>
-      <translation type="unfinished">Enable GPU-Assisted Validation</translation>
+      <translation>Bruk grafikkort assistert validering</translation>
     </message>
     <message>
       <source>Experimental</source>
-      <translation type="unfinished">Experimental</translation>
+      <translation>Eksperimentell</translation>
     </message>
     <message>
       <source>Experimental Features</source>
-      <translation type="unfinished">Experimental Features</translation>
+      <translation>Eksperimentelle funksjoner</translation>
     </message>
     <message>
       <source>Enable Readbacks</source>
-      <translation type="unfinished">Enable Readbacks</translation>
+      <translation>Bruk tilbakelesninger</translation>
     </message>
     <message>
       <source>Enable Readback Linear Images</source>
-      <translation type="unfinished">Enable Readback Linear Images</translation>
+      <translation>Bruk tilbakelesninger av lineære bilder</translation>
     </message>
     <message>
       <source>Enable Direct Memory Access</source>
-      <translation type="unfinished">Enable Direct Memory Access</translation>
+      <translation>Bruk direkte minnetilgang</translation>
     </message>
     <message>
       <source>Enable Devkit Console Mode</source>
-      <translation type="unfinished">Enable Devkit Console Mode</translation>
+      <translation>Bruk utvikler-konsollmodus</translation>
     </message>
     <message>
       <source>Enable PS4 Neo Mode</source>
-      <translation type="unfinished">Enable PS4 Neo Mode</translation>
+      <translation>Bruk PS4 Neo-modus</translation>
     </message>
     <message>
       <source>Set &quot;PSN signed-in&quot; to True</source>
-      <translation type="unfinished">Set &quot;PSN signed-in&quot; to True</translation>
+      <translation>Bruk emulering av PSN-tilgang</translation>
     </message>
     <message>
       <source>Set &quot;Network Connected&quot; to True</source>
-      <translation type="unfinished">Set &quot;Network Connected&quot; to True</translation>
+      <translation>Bruk emulering av nettverkstilgang</translation>
     </message>
     <message>
       <source>Additional DMem Allocation</source>
-      <translation type="unfinished">Additional DMem Allocation</translation>
+      <translation>Ytterligere direkte-minne tildeling</translation>
     </message>
     <message>
       <source>Vblank Frequency</source>
-      <translation type="unfinished">Vblank Frequency</translation>
+      <translation>Vblank-frekvens</translation>
     </message>
     <message>
       <source>WARNING: These features are experimental and should not be enabled unless you were told to, or a game requires it. Please ask in the shadPS4 Discord server if you have any questions.</source>
-      <translation type="unfinished">WARNING: These features are experimental and should not be enabled unless you were told to, or a game requires it. Please ask in the shadPS4 Discord server if you have any questions.</translation>
+      <translation>Advarsel: Disse funksjonene er eksperimentelle og bør ikke tas i bruk med mindre du har fått beskjed om, eller et spill krever det. Spør i shadPS4-Discord-serveren dersom du har spørsmål.</translation>
     </message>
     <message>
       <source>Point your mouse at an option to display its description.</source>
-      <translation type="unfinished">Point your mouse at an option to display its description.</translation>
+      <translation>Pek musen over et alternativ for å vise beskrivelsen.</translation>
     </message>
     <message>
       <source>Directory to install games</source>
-      <translation type="unfinished">Directory to install games</translation>
+      <translation>Mappe for installering av spill</translation>
     </message>
     <message>
       <source>Invalid Path</source>
-      <translation type="unfinished">Invalid Path</translation>
+      <translation>Ugyldig sti</translation>
     </message>
     <message>
       <source>Selected folder does not exist.</source>
-      <translation type="unfinished">Selected folder does not exist.</translation>
+      <translation>Valgt mappe finnes ikke.</translation>
     </message>
     <message>
       <source>Duplicate Path</source>
-      <translation type="unfinished">Duplicate Path</translation>
+      <translation>Kopiert sti</translation>
     </message>
     <message>
       <source>This folder is already added.</source>
-      <translation type="unfinished">This folder is already added.</translation>
+      <translation>Denne mappa er allerede lagt til.</translation>
     </message>
     <message>
       <source>Open Folder</source>
-      <translation type="unfinished">Open Folder</translation>
+      <translation>Åpne mappe</translation>
     </message>
     <message>
       <source>Disable</source>
-      <translation type="unfinished">Disable</translation>
+      <translation>Slå av</translation>
     </message>
     <message>
       <source>Enable</source>
-      <translation type="unfinished">Enable</translation>
+      <translation>Slå på</translation>
     </message>
     <message>
       <source>Select directory for DLC</source>
-      <translation type="unfinished">Select directory for DLC</translation>
+      <translation>Velg mappe for nedlastbart innhold</translation>
     </message>
     <message>
       <source>Select directory for home</source>
-      <translation type="unfinished">Select directory for home</translation>
+      <translation>Velg mappe for hjem</translation>
     </message>
     <message>
       <source>Select directory for System modules</source>
-      <translation type="unfinished">Select directory for System modules</translation>
+      <translation>Velg mappe for systemmoduler</translation>
     </message>
     <message>
       <source>This path does not exist on disk.</source>
-      <translation type="unfinished">This path does not exist on disk.</translation>
+      <translation>Stien finnes ikke på denne disken.</translation>
     </message>
     <message>
       <source>Error</source>
-      <translation type="unfinished">Error</translation>
+      <translation>Feil</translation>
     </message>
     <message>
       <source>Failed to save settings.</source>
-      <translation type="unfinished">Failed to save settings.</translation>
+      <translation>Feil ved lagring av innstillingene.</translation>
     </message>
     <message>
       <source>Restore Defaults</source>
-      <translation type="unfinished">Restore Defaults</translation>
+      <translation>Gjenopprett standarder</translation>
     </message>
     <message>
       <source>Are you sure you want to restore all settings to their default values?</source>
-      <translation type="unfinished">Are you sure you want to restore all settings to their default values?</translation>
+      <translation>Er du sikker på at du vil gjenopprette alle innstillingene til standardverdiene?</translation>
     </message>
     <message>
       <source>Save</source>
-      <translation type="unfinished">Save</translation>
+      <translation>Lagre</translation>
     </message>
     <message>
       <source>Apply</source>
-      <translation type="unfinished">Apply</translation>
+      <translation>Bruk</translation>
     </message>
     <message>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Lukk</translation>
     </message>
   </context>
   <context>
     <name>SettingsDialogHelperTexts</name>
     <message>
       <source>Game Folders:\nThe list of folders to check for installed games.</source>
-      <translation type="unfinished">Game Folders:\nThe list of folders to check for installed games.</translation>
+      <translation>Spillmapper:\nListe over mapper som brukes for å se etter installerte spill.</translation>
     </message>
     <message>
       <source>Add Folder:\nAdd a new folder to the list of game installation folders.</source>
-      <translation type="unfinished">Add Folder:\nAdd a new folder to the list of game installation folders.</translation>
+      <translation>Legg til mappe:\nlegg til en ny mappe på lista av spillets installasjonsmapper.</translation>
     </message>
     <message>
       <source>Remove Folder:\nRemove the selected folder from the list of game installation folders.</source>
-      <translation type="unfinished">Remove Folder:\nRemove the selected folder from the list of game installation folders.</translation>
+      <translation>Fjern mappe:\nFjern den valgte mappa fra lista over spillets installasjonsmapper.</translation>
     </message>
     <message>
       <source>DLC Path:\nThe folder where game DLC is loaded from.</source>
-      <translation type="unfinished">DLC Path:\nThe folder where game DLC is loaded from.</translation>
+      <translation>Sti for nedlastbart innhold:\n Mappa hvor nedlastbart innhold for spillene lastes fra.</translation>
     </message>
     <message>
       <source>Browse:\nBrowse for a folder to set as the DLC path.</source>
-      <translation type="unfinished">Browse:\nBrowse for a folder to set as the DLC path.</translation>
+      <translation>Bla gjennom:\nSøk etter en mappe å velges som stien til nedlastbart innhold.</translation>
     </message>
     <message>
       <source>Home Folder:\nThe folder where the emulator stores user data such as save files and trophies.</source>
-      <translation type="unfinished">Home Folder:\nThe folder where the emulator stores user data such as save files and trophies.</translation>
+      <translation>Hjemmemappe:\nMappa hvor emulatoren lagrer brukerdata som lagret brukerdata og trofeer.</translation>
     </message>
     <message>
       <source>Browse:\nBrowse for a folder to set as the Home folder.</source>
-      <translation type="unfinished">Browse:\nBrowse for a folder to set as the Home folder.</translation>
+      <translation>Bla gjennom:\nSøk etter en mappe å velge for hjem.</translation>
     </message>
     <message>
       <source>System Modules Folder:\nThe folder where system modules are loaded from.</source>
-      <translation type="unfinished">System Modules Folder:\nThe folder where system modules are loaded from.</translation>
+      <translation>Mappe for systemmoduler:\nMappa hvor systemmodulene lastes fra.</translation>
     </message>
     <message>
       <source>Browse:\nBrowse for a folder to set as the System Modules folder.</source>
-      <translation type="unfinished">Browse:\nBrowse for a folder to set as the System Modules folder.</translation>
+      <translation>Endre mappe:\nBla gjennom for å finne mappa til systemmodulene.</translation>
     </message>
     <message>
       <source>Directory Scan Depth:\nSet the maximum depth when scanning for games in the specified game folders.\n1 means one level of subfolders is scanned, and so on.</source>
-      <translation type="unfinished">Directory Scan Depth:\nSet the maximum depth when scanning for games in the specified game folders.\n1 means one level of subfolders is scanned, and so on.</translation>
+      <translation>Søkingsdybde for sti:\nVelg maks dybden ved søking av spill i de valgte spillmappene.\n1 betyr ett nivå av undermappene søkes, og så videre.</translation>
     </message>
   </context>
   <context>
     <name>UserManagerDialog</name>
     <message>
       <source>User Manager</source>
-      <translation>Gestor de Utilizadores</translation>
+      <translation>Brukerhåndtering</translation>
     </message>
     <message>
       <source>&amp;Create User</source>
-      <translation>&amp;Criar Utilizador</translation>
+      <translation>&amp;Opprett bruker</translation>
     </message>
     <message>
       <source>&amp;Delete User</source>
-      <translation>&amp;Eliminar Utilizador</translation>
+      <translation>&amp;Slett bruker</translation>
     </message>
     <message>
       <source>&amp;Rename User</source>
-      <translation>&amp;Renomear Utilizador</translation>
+      <translation>&amp;Gi brukeren nytt navn</translation>
     </message>
     <message>
       <source>&amp;Set Default User</source>
-      <translation>&amp;Definir Utilizador Padrão</translation>
+      <translation>&amp;Sett som standardbruker</translation>
     </message>
     <message>
       <source>&amp;Set Color</source>
-      <translation>&amp;Definir Cor</translation>
+      <translation>&amp;Velg farge</translation>
     </message>
     <message>
       <source>&amp;Set Controller Port</source>
-      <translation>&amp;Definir Porta do Comando</translation>
+      <translation>&amp;Velg kontroller-port</translation>
     </message>
     <message>
       <source>&amp;Close</source>
-      <translation>&amp;Fechar</translation>
+      <translation>&amp;Lukk</translation>
     </message>
     <message>
       <source>Error</source>
-      <translation>Erro</translation>
+      <translation>Feil</translation>
     </message>
     <message>
       <source>Cannot add more users.</source>
-      <translation>Não é possível adicionar mais utilizadores.</translation>
+      <translation>Klarte ikke legge til flere brukere.</translation>
     </message>
     <message>
       <source>Create New User</source>
-      <translation>Criar Novo Utilizador</translation>
+      <translation>Opprett ny bruker</translation>
     </message>
     <message>
       <source>New User ID: %1</source>
-      <translation>Novo ID de Utilizador: %1</translation>
+      <translation>Ny bruker-ID: %1</translation>
     </message>
     <message>
       <source>Username (3–16 chars, letters, numbers, _, -)</source>
-      <translation>Nome de utilizador (3–16 caracteres, letras, números, _, -)</translation>
+      <translation>Brukernavn (3-16 tegn, bokstaver, tall, _, -)</translation>
     </message>
     <message>
       <source>Invalid Username</source>
-      <translation>Nome de Utilizador Inválido</translation>
+      <translation>Ugyldig brukernavn</translation>
     </message>
     <message>
       <source>Username must be 3–16 chars and valid.</source>
-      <translation>O nome de utilizador deve ter 3–16 caracteres e ser válido.</translation>
+      <translation>Brukernavn må være mellom 3-16 tegn og gyldig.</translation>
     </message>
     <message>
       <source>Delete Confirmation</source>
-      <translation>Confirmação de Eliminação</translation>
+      <translation>Bekreftelse av sletting</translation>
     </message>
     <message>
       <source>Delete user ID %1?</source>
-      <translation>Eliminar utilizador com ID %1?</translation>
+      <translation>Slett bruker-ID %1?</translation>
     </message>
     <message>
       <source>Rename User</source>
-      <translation>Renomear Utilizador</translation>
+      <translation>Gi brukeren nytt navn</translation>
     </message>
     <message>
       <source>Old Username: %1</source>
-      <translation>Nome Antigo: %1</translation>
+      <translation>Gammelt brukernavn: %1</translation>
     </message>
     <message>
       <source>Set User Color</source>
-      <translation>Definir Cor do Utilizador</translation>
+      <translation>Velg brukerfarge</translation>
     </message>
     <message>
       <source>Select color:</source>
-      <translation>Selecionar cor:</translation>
+      <translation>Velg farge:</translation>
     </message>
     <message>
       <source>Set Controller Port</source>
-      <translation>Definir Porta do Comando</translation>
+      <translation>Velg kontroller-port</translation>
     </message>
     <message>
       <source>Assign port (1-4) to this user:</source>
-      <translation>Atribuir porta (1–4) a este utilizador:</translation>
+      <translation>Gi port (1-4) til denne brukeren:</translation>
     </message>
     <message>
       <source>&amp;Open User Directory</source>
-      <translation>&amp;Abrir Diretório do Utilizador</translation>
+      <translation>&amp;Åpne brukermappe</translation>
     </message>
   </context>
 </TS>
