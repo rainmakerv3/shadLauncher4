@@ -564,7 +564,7 @@ Bruker lokal database.
       <translation>&amp;npbind.dat-viser</translation>
     </message>
     <message>
-      <source>&amp;Ttrophy Viewer</source>
+      <source>&amp;Trophy Viewer</source>
       <translation>&amp;Troféviser</translation>
     </message>
   </context>
@@ -628,6 +628,13 @@ Notat:
     <message>
       <source>Last updated</source>
       <translation>Sist oppdatert</translation>
+    </message>
+  </context>
+  <context>
+    <name>IpcClient</name>
+    <message>
+      <source>Could not find the emulator executable</source>
+      <translation>Fant ikke emulator-programfila</translation>
     </message>
   </context>
   <context>
@@ -946,6 +953,14 @@ Notat:
       <source>Crypto Key Manager</source>
       <translation>Kryptonøkkel-behandler</translation>
     </message>
+    <message>
+      <source>Version Manager</source>
+      <translation>Versjonsbehandling</translation>
+    </message>
+    <message>
+      <source>None</source>
+      <translation>Ingen</translation>
+    </message>
   </context>
   <context>
     <name>NpBindDialog</name>
@@ -1100,6 +1115,22 @@ Notat:
       <source>Type</source>
       <translation>Type</translation>
     </message>
+    <message>
+      <source>Version Activated</source>
+      <translation>Versjon i bruk</translation>
+    </message>
+    <message>
+      <source>The selected version is now active.</source>
+      <translation>Den valgte versjonen er nå i bruk.</translation>
+    </message>
+    <message>
+      <source>Copy Failed</source>
+      <translation>Feil ved kopiering</translation>
+    </message>
+    <message>
+      <source>Unable to activate selected version.</source>
+      <translation>Klarte ikke ta i bruk valgt versjon.</translation>
+    </message>
   </context>
   <context>
     <name>SFOViewerDialog</name>
@@ -1197,14 +1228,6 @@ Notat:
       <translation>Lydenhet (DS4-høyttaler)</translation>
     </message>
     <message>
-      <source>System</source>
-      <translation>System</translation>
-    </message>
-    <message>
-      <source>Console Language</source>
-      <translation>Konsollspråk</translation>
-    </message>
-    <message>
       <source>Volume</source>
       <translation>Lydstyrke</translation>
     </message>
@@ -1221,16 +1244,8 @@ Notat:
       <translation>Grensesnitt</translation>
     </message>
     <message>
-      <source>General Frontend Settings</source>
-      <translation>Grensesnitt-innstillinger</translation>
-    </message>
-    <message>
       <source>Enable Discord Rich Presence</source>
       <translation>Bruk Discord Rich Presence</translation>
-    </message>
-    <message>
-      <source>GUI Language</source>
-      <translation>Grensesnittspråk</translation>
     </message>
     <message>
       <source>Background Image</source>
@@ -1255,10 +1270,6 @@ Notat:
     <message>
       <source>Set the volume of the background music.</source>
       <translation>Velg lydstyrken til bakgrunnsmusikken.</translation>
-    </message>
-    <message>
-      <source>Trophy Key</source>
-      <translation>Trofénøkkel</translation>
     </message>
     <message>
       <source>Game Compatibility</source>
@@ -1740,6 +1751,18 @@ Notat:
       <source>Close</source>
       <translation>Lukk</translation>
     </message>
+    <message>
+      <source>Audio</source>
+      <translation>Lyd</translation>
+    </message>
+    <message>
+      <source>Frontend Settings</source>
+      <translation>Grensesnitt-innstillinger</translation>
+    </message>
+    <message>
+      <source>Default Device</source>
+      <translation>Standard enhet</translation>
+    </message>
   </context>
   <context>
     <name>SettingsDialogHelperTexts</name>
@@ -1881,6 +1904,263 @@ Notat:
     <message>
       <source>&amp;Open User Directory</source>
       <translation>&amp;Åpne brukermappe</translation>
+    </message>
+  </context>
+  <context>
+    <name>VersionDialog</name>
+    <message>
+      <source>Version Manager</source>
+      <translation>Versjonsbehandling</translation>
+    </message>
+    <message>
+      <source>Path to save versions</source>
+      <translation>Sti for lagring av versjonene</translation>
+    </message>
+    <message>
+      <source>Browse</source>
+      <translation>Bla gjennom</translation>
+    </message>
+    <message>
+      <source>Installed</source>
+      <translation>Installert</translation>
+    </message>
+    <message>
+      <source>Selected</source>
+      <translation>Valgt</translation>
+    </message>
+    <message>
+      <source>Version</source>
+      <translation>Versjon</translation>
+    </message>
+    <message>
+      <source>Codename</source>
+      <translation>Kodenavn</translation>
+    </message>
+    <message>
+      <source>Date</source>
+      <translation>Dato</translation>
+    </message>
+    <message>
+      <source>Add Custom</source>
+      <translation>Legg til tilpasset</translation>
+    </message>
+    <message>
+      <source>Delete</source>
+      <translation>Slett</translation>
+    </message>
+    <message>
+      <source>Refresh List</source>
+      <translation>Oppdater lista</translation>
+    </message>
+    <message>
+      <source>Download</source>
+      <translation>Last ned</translation>
+    </message>
+    <message>
+      <source>Check for Pre-release updates at startup</source>
+      <translation>Se etter forhåndsoppdateringer ved oppstart</translation>
+    </message>
+    <message>
+      <source>Always Show Changelog</source>
+      <translation>Vis alltid endringsloggen</translation>
+    </message>
+    <message>
+      <source>Check for Pre-release Updates</source>
+      <translation>Se etter forhåndsoppdateringer</translation>
+    </message>
+    <message>
+      <source>Select the folder where the emulator versions will be installed</source>
+      <translation>Velg mappa hvor emulatorversjonene installeres</translation>
+    </message>
+    <message>
+      <source>Select executable</source>
+      <translation>Velg programfila</translation>
+    </message>
+    <message>
+      <source>Executable (*.exe)</source>
+      <translation>Kjørbar (*.exe)</translation>
+    </message>
+    <message>
+      <source>Version name</source>
+      <translation>Versjonsnavn</translation>
+    </message>
+    <message>
+      <source>Enter the name of this version as it appears in the list.</source>
+      <translation>Skriv inn navnet på denne versjonen slik det vises i lista.</translation>
+    </message>
+    <message>
+      <source>Error</source>
+      <translation>Feil</translation>
+    </message>
+    <message>
+      <source>A version with that name already exists.</source>
+      <translation>En versjon med det navnet finnes allerede.</translation>
+    </message>
+    <message>
+      <source>Local</source>
+      <translation>Lokal</translation>
+    </message>
+    <message>
+      <source>Success</source>
+      <translation>Vellykket</translation>
+    </message>
+    <message>
+      <source>Version added successfully.</source>
+      <translation>La til versjon på velykket vis.</translation>
+    </message>
+    <message>
+      <source>No version selected. Please choose one from the list to delete.</source>
+      <translation>Ingen versjon valgt. Velg en fra lista for sletting.</translation>
+    </message>
+    <message>
+      <source>Failed to determine the folder path.</source>
+      <translation>Fant ikke stien til mappa.</translation>
+    </message>
+    <message>
+      <source>Delete version</source>
+      <translation>Slett versjon</translation>
+    </message>
+    <message>
+      <source>Do you want to delete the version</source>
+      <translation>Ønsker du å slette den valgte versjonen</translation>
+    </message>
+    <message>
+      <source>Failed to determine the folder to remove.</source>
+      <translation>Klarte ikke bestemme mappa som skulle fjernes.</translation>
+    </message>
+    <message>
+      <source>Failed to delete folder.</source>
+      <translation>Klarte ikke slette mappa.</translation>
+    </message>
+    <message>
+      <source>Checking for new emulator versions...</source>
+      <translation>Ser etter nye emulatorversjoner …</translation>
+    </message>
+    <message>
+      <source>First you need to choose a location to save the versions in
+&apos;Path to save versions&apos;</source>
+      <translation>Først må du velge en plassering å lagre versjonene i
+«Sti for lagring av versjonene»</translation>
+    </message>
+    <message>
+      <source>Confirm Download</source>
+      <translation>Bekreft nedlasting</translation>
+    </message>
+    <message>
+      <source>Do you want to download the version</source>
+      <translation>Ønsker du å laste ned versjonen</translation>
+    </message>
+    <message>
+      <source>No files available for this platform.</source>
+      <translation>Ingen filer tilgjengelig for denne plattformen.</translation>
+    </message>
+    <message>
+      <source>Downloading</source>
+      <translation>Laster ned</translation>
+    </message>
+    <message>
+      <source>Error accessing GitHub</source>
+      <translation>Feil ved tilgang til GitHub</translation>
+    </message>
+    <message>
+      <source>Version %1 has been downloaded and selected.</source>
+      <translation>Versjon %1 er lastet ned og valgt.</translation>
+    </message>
+    <message>
+      <source>Failed to create zip extraction script</source>
+      <translation>Klarte ikke opprette zip-utpakkingsskript</translation>
+    </message>
+    <message>
+      <source>Cannot open cache file</source>
+      <translation>Klarte ikke åpne hurtiglagringsfil</translation>
+    </message>
+    <message>
+      <source>Cache file is corrupted</source>
+      <translation>Hurtiglagringsfila er ødelagt</translation>
+    </message>
+    <message>
+      <source>The GitHub API response is not a valid JSON array.</source>
+      <translation>Svaret fra GitHub-API-en er ikke en gyldig JSON-matrise.</translation>
+    </message>
+    <message>
+      <source>Unable to get hash of latest pre-release.</source>
+      <translation>Klarte ikke hente sjekksummen for forhåndsutgivelsen.</translation>
+    </message>
+    <message>
+      <source>Auto Updater - Emulator</source>
+      <translation>Automatisk oppdatering – emulator</translation>
+    </message>
+    <message>
+      <source>You already have the latest pre-release version.</source>
+      <translation>Du har allerede den nyeste forhåndsutgivelsen.</translation>
+    </message>
+    <message>
+      <source>Update Available (Emulator)</source>
+      <translation>Oppdatering tilgjengelig (emulator)</translation>
+    </message>
+    <message>
+      <source>Current Version</source>
+      <translation>Gjeldende versjon</translation>
+    </message>
+    <message>
+      <source>Latest Version</source>
+      <translation>Nyeste versjon</translation>
+    </message>
+    <message>
+      <source>Do you want to update?</source>
+      <translation>Ønsker du å oppdatere?</translation>
+    </message>
+    <message>
+      <source>Update</source>
+      <translation>Oppdater</translation>
+    </message>
+    <message>
+      <source>No</source>
+      <translation>Nei</translation>
+    </message>
+    <message>
+      <source>Show Changelog</source>
+      <translation>Vis endringslogg</translation>
+    </message>
+    <message>
+      <source>Hide Changelog</source>
+      <translation>Skjul endringslogg</translation>
+    </message>
+    <message>
+      <source>Network error while fetching changelog</source>
+      <translation>Nettverksfeil ved henting av endringslogg</translation>
+    </message>
+    <message>
+      <source>Changes</source>
+      <translation>Endringer</translation>
+    </message>
+    <message>
+      <source>No download URL found for the specified asset.</source>
+      <translation>Fant ingen nedlastings-URL for den valgte ressursen.</translation>
+    </message>
+    <message>
+      <source>Downloading Pre-release (Nightly)</source>
+      <translation>Laster ned forhåndsutgivelse (nattlig)</translation>
+    </message>
+    <message>
+      <source>Network error while downloading</source>
+      <translation>Nettverksfeil ved nedlasting</translation>
+    </message>
+    <message>
+      <source>Extraction failure.</source>
+      <translation>Feil ved utpakking.</translation>
+    </message>
+    <message>
+      <source>Complete installation</source>
+      <translation>Fullfør installasjonen</translation>
+    </message>
+    <message>
+      <source>Pre-release (Nightly) updated successfully.</source>
+      <translation>Oppdaterte forhåndsutgivelsen (nattlig) på vellykket vis.</translation>
+    </message>
+    <message>
+      <source>Failed to create the update script file</source>
+      <translation>Klarte ikke opprette oppdateringsskriptfila</translation>
     </message>
   </context>
 </TS>
