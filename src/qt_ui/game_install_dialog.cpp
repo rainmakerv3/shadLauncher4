@@ -47,7 +47,7 @@ GameInstallDialog::GameInstallDialog(std::shared_ptr<GUISettings> gui_settings,
     }
 
     // --- Version directory ---
-    QString version = m_gui_settings->GetValue(GUI::vm_versionPath).toString();
+    QString version = m_gui_settings->GetValue(GUI::version_manager_versionPath).toString();
     if (!version.isEmpty()) {
         ui->editVersionDirectory->setText(version);
     } else {
@@ -140,7 +140,7 @@ void GameInstallDialog::Save() {
     // Save normalized paths
     m_emu_settings->AddGameInstallDir(std::filesystem::path(gamesPath));
     m_emu_settings->SetAddonInstallDir(std::filesystem::path(addonsPath));
-    m_gui_settings->SetValue(GUI::vm_versionPath, QString::fromStdString(versionPath));
+    m_gui_settings->SetValue(GUI::version_manager_versionPath, QString::fromStdString(versionPath));
 
     m_emu_settings->Save();
 

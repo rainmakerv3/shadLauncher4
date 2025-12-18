@@ -9,15 +9,15 @@ BackgroundMusicPlayer::BackgroundMusicPlayer(QObject* parent) : QObject(parent) 
     m_mediaPlayer->setAudioOutput(m_audioOutput);
 }
 
-void BackgroundMusicPlayer::setVolume(int volume) {
+void BackgroundMusicPlayer::SetVolume(int volume) {
     float linearVolume = QAudio::convertVolume(volume / 100.0f, QAudio::LogarithmicVolumeScale,
                                                QAudio::LinearVolumeScale);
     m_audioOutput->setVolume(linearVolume);
 }
 
-void BackgroundMusicPlayer::playMusic(const QString& snd0path, bool loops) {
+void BackgroundMusicPlayer::PlayMusic(const QString& snd0path, bool loops) {
     if (snd0path.isEmpty()) {
-        stopMusic();
+        StopMusic();
         return;
     }
     const auto newMusic = QUrl::fromLocalFile(snd0path);
@@ -38,7 +38,7 @@ void BackgroundMusicPlayer::playMusic(const QString& snd0path, bool loops) {
     m_mediaPlayer->play();
 }
 
-void BackgroundMusicPlayer::stopMusic() {
+void BackgroundMusicPlayer::StopMusic() {
     m_mediaPlayer->stop();
     m_mediaPlayer->setSource(QUrl(""));
 }

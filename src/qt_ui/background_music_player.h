@@ -16,9 +16,9 @@ public:
         return instance;
     }
 
-    void setVolume(int volume);
-    void playMusic(const QString& snd0path, bool loops = true);
-    void stopMusic();
+    void SetVolume(int volume);
+    void PlayMusic(const QString& snd0path, bool loops = true);
+    void StopMusic();
 
 private:
     BackgroundMusicPlayer(QObject* parent = nullptr);
