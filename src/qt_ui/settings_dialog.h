@@ -29,6 +29,7 @@ public:
 
 signals:
     void GameFoldersChanged();
+    void CompatUpdateRequested();
 
 private:
     int m_tab_index = 0;

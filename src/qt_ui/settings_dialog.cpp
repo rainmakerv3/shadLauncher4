@@ -1,6 +1,7 @@
 ﻿// SPDX-FileCopyrightText: Copyright 2025 shadLauncher4 Project
 // SPDX-License-Identifier: GPL-2.0-or-later
 
+#include <QDesktopServices>
 #include <QtWidgets>
 #include <SDL3/SDL_audio.h>
 #include <SDL3/SDL_init.h>
@@ -253,9 +254,20 @@ void SettingsDialog::OtherConnections() {
         // TODO: ingame volume adjustment with IPC
     });
 
+    connect(ui->OpenCustomTrophyLocationButton, &QPushButton::clicked, this, []() {
+        QString userPath;
+        Common::FS::PathToQString(userPath,
+                                  Common::FS::GetUserPath(Common::FS::PathType::CustomTrophy));
+
+        if (!QDir().exists(userPath))
+            QDir().mkpath(userPath);
+
+        QDesktopServices::openUrl(QUrl::fromLocalFile(userPath));
+    });
+
     // ------------------ Gui tab --------------------------------------------------------
     connect(ui->BGMVolumeSlider, &QSlider::valueChanged, this,
-            [](int value) { BackgroundMusicPlayer::getInstance().setVolume(value); });
+            [](int value) { BackgroundMusicPlayer::getInstance().SetVolume(value); });
 }
 
 // ---------------------------- Load from backend to UI ----------------------------
@@ -268,6 +280,14 @@ void SettingsDialog::LoadValuesFromConfig() {
         QString::fromStdString(m_emu_settings->GetMainOutputDevice()));
     ui->DsAudioComboBox->setCurrentText(
         QString::fromStdString(m_emu_settings->GetPadSpkOutputDevice()));
+    ui->disableTrophycheckBox->setChecked(m_emu_settings->IsTrophyPopupDisabled());
+    ui->popUpDurationSpinBox->setValue(m_emu_settings->GetTrophyNotificationDuration());
+
+    QString trophy_side = QString::fromStdString(m_emu_settings->GetTrophyNotificationSide());
+    ui->radioButton_Left->setChecked(trophy_side == "left");
+    ui->radioButton_Right->setChecked(trophy_side == "right");
+    ui->radioButton_Top->setChecked(trophy_side == "top");
+    ui->radioButton_Bottom->setChecked(trophy_side == "bottom");
 
     // ------------------ GUI tab --------------------------------------------------------
     ui->discordRPCCheckbox->setChecked(m_emu_settings->IsDiscordRPCEnabled());
@@ -277,6 +297,14 @@ void SettingsDialog::LoadValuesFromConfig() {
         m_gui_settings->GetValue(GUI::game_list_showBackgroundImage).toBool());
     ui->backgroundImageOpacitySlider->setValue(
         m_gui_settings->GetValue(GUI::game_list_backgroundImageOpacity).toInt());
+    ui->checkCompatibilityOnStartupCheckBox->setChecked(
+        m_gui_settings->GetValue(GUI::compatibility_check_on_startup).toBool());
+    ui->updaterCheckBox->setChecked(
+        m_gui_settings->GetValue(GUI::general_check_gui_updates).toBool());
+    ui->changelogCheckBox->setChecked(
+        m_gui_settings->GetValue(GUI::general_show_changelog).toBool());
+    ui->separateUpdateCheckBox->setChecked(
+        m_gui_settings->GetValue(GUI::general_separate_update_folder).toBool());
 
     // ------------------ Games Folder --------------------------------------------------------
     ui->gameFoldersListWidget->clear();
@@ -356,6 +384,20 @@ void SettingsDialog::ApplyValuesToBackend() {
     m_emu_settings->SetVolumeSlider(ui->horizontalVolumeSlider->value());
     m_emu_settings->SetMainOutputDevice(ui->GenAudioComboBox->currentText().toStdString());
     m_emu_settings->SetPadSpkOutputDevice(ui->DsAudioComboBox->currentText().toStdString());
+    m_emu_settings->SetTrophyPopupDisabled(ui->disableTrophycheckBox->isChecked());
+    m_emu_settings->SetTrophyNotificationDuration(ui->popUpDurationSpinBox->value());
+
+    std::string trophy_loc;
+    if (ui->radioButton_Top->isChecked()) {
+        trophy_loc = "top";
+    } else if (ui->radioButton_Left->isChecked()) {
+        trophy_loc = "left";
+    } else if (ui->radioButton_Right->isChecked()) {
+        trophy_loc = "right";
+    } else if (ui->radioButton_Bottom->isChecked()) {
+        trophy_loc = "bottom";
+    }
+    m_emu_settings->SetTrophyNotificationSide(trophy_loc);
 
     // ------------------ GUI tab --------------------------------------------------------
     m_emu_settings->SetDiscordRPCEnabled(ui->discordRPCCheckbox->isChecked());
@@ -368,6 +410,12 @@ void SettingsDialog::ApplyValuesToBackend() {
                              ui->showBackgroundImageCheckBox->isChecked());
     m_gui_settings->SetValue(GUI::game_list_backgroundImageOpacity,
                              ui->backgroundImageOpacitySlider->value());
+    m_gui_settings->SetValue(GUI::compatibility_check_on_startup,
+                             ui->checkCompatibilityOnStartupCheckBox->isChecked());
+    m_gui_settings->SetValue(GUI::general_show_changelog, ui->changelogCheckBox->isChecked());
+    m_gui_settings->SetValue(GUI::general_check_gui_updates, ui->updaterCheckBox->isChecked());
+    m_gui_settings->SetValue(GUI::general_separate_update_folder,
+                             ui->separateUpdateCheckBox->isChecked());
 
     // ------------------ Paths tab --------------------------------------------------------
     for (int i = 0; i < ui->gameFoldersListWidget->count(); ++i) {

@@ -88,10 +88,10 @@ struct GeneralSettings {
     Setting<bool> psn_signed_in{false};
     Setting<bool> trophy_popup_disabled{false};
     Setting<double> trophy_notification_duration{6.0};
+    Setting<std::string> trophy_notification_side{"right"};
     Setting<std::string> log_filter{""};
     Setting<std::string> log_type{"sync"};
     Setting<bool> show_splash{false};
-    Setting<std::string> trophy_notification_side{"right"};
     Setting<bool> connected_to_network{false};
     Setting<bool> discord_rpc_enabled{false};
 
