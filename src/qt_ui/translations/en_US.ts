@@ -844,6 +844,86 @@ Using local database.
         <source>&amp;Cheats &amp; Patches</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Game</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This game has no update to delete!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This game has no DLC to delete!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>DLC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This game has no save data to delete!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This game has no Shader Cache to delete!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Shader Cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Shader cache deleted successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete %1&apos;s %2 directory?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Delete...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Delete Game</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Delete Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Delete Save Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Delete DLC </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Delete Trophy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Delete Shader Cache</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GameListGrid</name>
@@ -1655,6 +1735,15 @@ Select an emulator version from the right panel.</source>
     </message>
     <message>
         <source>Unable to activate selected version.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Executable does not exist:
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to copy executable to application directory.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2578,10 +2667,6 @@ Select an emulator version from the right panel.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Version added successfully.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>No version selected. Please choose one from the list to delete.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2632,14 +2717,6 @@ Select an emulator version from the right panel.</source>
     </message>
     <message>
         <source>Error accessing GitHub</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Version %1 has been downloaded and selected.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Failed to create zip extraction script</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2723,15 +2800,79 @@ Select an emulator version from the right panel.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Complete installation</source>
+        <source>Executable (*)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Pre-release (Nightly) updated successfully.</source>
+        <source>Executable (*.*)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Failed to create the update script file</source>
+        <source>Version install path is not configured.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to copy executable into versions folder.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to install executable into application directory.
+The custom build is still available under:
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not find executable in extracted files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to copy executable to application directory.
+The version has been saved to: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to copy executable to application directory.
+The pre-release version has been saved to: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom version installed successfully:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>1. Version folder:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>2. Installed to:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>ZIP extraction failed:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Executable not found in extracted files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Version %1 has been:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>1. Downloaded to:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extraction failure:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pre-release (Nightly) has been:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
