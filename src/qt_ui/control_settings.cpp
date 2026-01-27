@@ -363,7 +363,7 @@ void ControlSettings::SaveControllerConfig(bool CloseOnSave) {
 
     m_emu_settings->SetUseUnifiedInputConfig(!ui->PerGameCheckBox->isChecked());
 
-    // TODO, current settings can't handle multiple args for color
+    // TODO, looks like this needs to be changed to a new ipc command
     // Config::SetOverrideControllerColor(ui->LightbarCheckBox->isChecked());
     // Config::SetControllerCustomColor(ui->RSlider->value(), ui->GSlider->value(),
     //                             ui->BSlider->value());
