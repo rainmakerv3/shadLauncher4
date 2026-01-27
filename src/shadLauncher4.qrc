@@ -18,5 +18,9 @@
         <file>images/flag_world.png</file>
         <file>images/flag_china.png</file>
         <file>images/shadLauncher4.png</file>
+        <file>images/hotkey.png</file>
+        <file>images/KBM.png</file>
+        <file>images/keyboard_icon.png</file>
+        <file>images/ps4_controller.png</file>
     </qresource>
 </RCC>
