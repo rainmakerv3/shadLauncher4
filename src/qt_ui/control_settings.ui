@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright 2025 shadPS4 Emulator Project
+     SPDX-License-Identifier: GPL-2.0-or-later -->
 <ui version="4.0">
  <class>ControlSettings</class>
  <widget class="QDialog" name="ControlSettings">
@@ -1979,7 +1981,7 @@
   <customwidget>
    <class>QRightClickButton</class>
    <extends>QPushButton</extends>
-   <header location="global">src/qt_gui/right_click_button.h</header>
+   <header location="global">qt_ui/right_click_button.h</header>
   </customwidget>
  </customwidgets>
  <resources>

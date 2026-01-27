@@ -11,10 +11,10 @@
 #include "core/emulator_settings.h"
 
 class EditorDialog : public QDialog {
-Q_OBJECT // Necessary for using Qt's meta-object system (signals/slots)
+    Q_OBJECT
 public:
-explicit EditorDialog(std::shared_ptr<EmulatorSettings> emu_settings,
-                      QWidget* parent = nullptr); // Constructor
+    explicit EditorDialog(std::shared_ptr<EmulatorSettings> emu_settings,
+                          QWidget* parent = nullptr); // Constructor
 
 protected:
     void closeEvent(QCloseEvent* event) override; // Override close event

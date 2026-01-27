@@ -56,8 +56,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1207</width>
-        <height>860</height>
+        <width>1221</width>
+        <height>834</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_19">
@@ -1105,7 +1105,7 @@
                  </size>
                 </property>
                 <property name="pixmap">
-                 <pixmap resource="../shadps4.qrc">:/images/KBM.png</pixmap>
+                 <pixmap resource="../shadLauncher4.qrc">:/images/KBM.png</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -2155,11 +2155,11 @@
   <customwidget>
    <class>QRightClickButton</class>
    <extends>QPushButton</extends>
-   <header>src/qt_gui/right_click_button.h</header>
+   <header location="global">qt_ui/right_click_button.h</header>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../shadps4.qrc"/>
+  <include location="../shadLauncher4.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -530,7 +530,7 @@
   <customwidget>
    <class>QRightClickButton</class>
    <extends>QPushButton</extends>
-   <header>src/qt_gui/right_click_button.h</header>
+   <header location="global">qt_ui/right_click_button.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
