@@ -9,6 +9,7 @@
 
 #include "background_music_player.h"
 #include "common/path_util.h"
+#include "control_settings.h"
 #include "core/emulator_settings.h"
 #include "core/emulator_state.h"
 #include "core/loader.h"
@@ -16,6 +17,8 @@
 #include "game_list_exporter.h"
 #include "game_list_frame.h"
 #include "gui_settings.h"
+#include "hotkeys.h"
+#include "kbm_gui.h"
 #include "main_window.h"
 #include "pkg_install_dir_select_dialog.h"
 #include "pkg_install_model.h"
@@ -195,6 +198,27 @@ void MainWindow::createConnects() {
             m_is_list_mode ? GUI::game_list_iconSize : GUI::game_list_iconSizeGrid, index);
         setIconSizeActions(index);
     });
+
+    connect(ui->toolbar_controls, &QAction::triggered, this, [this] {
+        std::string runningGameSerial =
+            EmulatorState::GetInstance()->IsGameRunning() ? last_game_info->info.serial : "";
+
+        auto remapWindow = new ControlSettings(
+            m_game_list_frame->GetGameInfo(), m_emu_settings, m_ipc_client,
+            EmulatorState::GetInstance()->IsGameRunning(), runningGameSerial, this);
+        remapWindow->exec();
+    });
+
+    connect(ui->toolbar_keyboard, &QAction::triggered, this, [this] {
+        std::string runningGameSerial =
+            EmulatorState::GetInstance()->IsGameRunning() ? last_game_info->info.serial : "";
+
+        auto kbmWindow =
+            new KBMSettings(m_game_list_frame->GetGameInfo(), m_emu_settings, m_ipc_client,
+                            EmulatorState::GetInstance()->IsGameRunning(), runningGameSerial, this);
+        kbmWindow->exec();
+    });
+
     connect(ui->sizeSlider, &QSlider::actionTriggered, this, [this](int action) {
         if (action != QAbstractSlider::SliderNoAction &&
             action !=
@@ -219,6 +243,11 @@ void MainWindow::createConnects() {
         GameListExporter exporter(m_game_list_frame, this);
         exporter.ShowExportDialog();
     });
+    connect(ui->actionConfigure_Hotkeys, &QAction::triggered, this, [this] {
+        auto hotkeyDialog = new Hotkeys(m_emu_settings, m_ipc_client,
+                                        EmulatorState::GetInstance()->IsGameRunning(), this);
+        hotkeyDialog->exec();
+    });
 
     const auto open_settings = [this](int tabIndex) {
         SettingsDialog* dlg =
@@ -238,6 +267,7 @@ void MainWindow::createConnects() {
         dlg->setAttribute(Qt::WA_DeleteOnClose);
         dlg->open();
     };
+
     connect(ui->actionConfigGeneral, &QAction::triggered, this,
             [open_settings]() { open_settings(0); });
     connect(ui->actionConfigGUI, &QAction::triggered, this,
