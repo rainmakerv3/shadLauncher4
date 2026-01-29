@@ -455,6 +455,7 @@ public:
     SETTING_FORWARD(m_input, DefaultControllerId, default_controller_id)
     SETTING_FORWARD_BOOL(m_input, UsingSpecialPad, use_special_pad)
     SETTING_FORWARD(m_input, SpecialPadClass, special_pad_class)
+    SETTING_FORWARD_BOOL(m_input, UseUnifiedInputConfig, use_unified_Input_Config)
 
     // Vulkan settings
     SETTING_FORWARD(m_vulkan, GpuId, gpu_id)

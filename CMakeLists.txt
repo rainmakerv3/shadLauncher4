@@ -96,6 +96,8 @@ set(COMMON src/common/types.h
            src/common/picosha2.h
            src/common/zip_util.cpp
            src/common/zip_util.h
+           src/common/input.cpp
+           src/common/input.h
 )
 
 set(CORE src/core/user_manager.cpp
@@ -222,6 +224,23 @@ set(QT_UI src/qt_ui/settings.cpp
           src/qt_ui/pkg_install_model.cpp
           src/qt_ui/pkg_install_model.h
           src/qt_ui/centered_checkbox_delegate.h
+          src/qt_ui/control_settings.cpp
+          src/qt_ui/control_settings.h
+          src/qt_ui/control_settings.ui
+          src/qt_ui/kbm_gui.cpp
+          src/qt_ui/kbm_gui.h
+          src/qt_ui/kbm_gui.ui
+          src/qt_ui/kbm_help_dialog.cpp
+          src/qt_ui/kbm_help_dialog.h
+          src/qt_ui/kbm_config_dialog.cpp
+          src/qt_ui/kbm_config_dialog.h
+          src/qt_ui/right_click_button.cpp
+          src/qt_ui/right_click_button.h
+          src/qt_ui/hotkeys.cpp
+          src/qt_ui/hotkeys.h
+          src/qt_ui/hotkeys.ui
+          src/qt_ui/sdl_event_wrapper.cpp
+          src/qt_ui/sdl_event_wrapper.h
 )
 
 set(SOURCES ${COMMON} ${CORE} ${QT_UI} ${FILEFORMAT} ${LIBRARIES} ${TRANSLATIONS} src/game_info.h src/main.cpp)
@@ -233,6 +252,7 @@ configure_file(
     ${CMAKE_BINARY_DIR}/generated/version.h
     @ONLY
 )
+
 target_include_directories(shadLauncher4 PRIVATE ${CMAKE_BINARY_DIR}/generated)
 
 target_link_libraries(shadLauncher4 PRIVATE fmt::fmt Qt6::Widgets Qt6::Concurrent Qt6::Xml Qt6::Network Qt6::Multimedia nlohmann_json::nlohmann_json ntdll SDL3::SDL3 libdeflate_static vulkaninfowin)

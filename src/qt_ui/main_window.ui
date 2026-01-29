@@ -211,6 +211,7 @@
     </property>
     <addaction name="actionExport_GameList"/>
     <addaction name="actionCrypto_Key_Manager"/>
+    <addaction name="actionConfigure_Hotkeys"/>
    </widget>
    <widget class="QMenu" name="menuView">
     <property name="title">
@@ -312,7 +313,9 @@
    <addaction name="separator"/>
    <addaction name="toolbar_config"/>
    <addaction name="toolbar_fullscreen"/>
+   <addaction name="separator"/>
    <addaction name="toolbar_controls"/>
+   <addaction name="toolbar_keyboard"/>
    <addaction name="separator"/>
    <addaction name="toolbar_refresh"/>
    <addaction name="toolbar_list"/>
@@ -702,6 +705,26 @@
    </property>
    <property name="toolTip">
     <string>Show Game Log</string>
+   </property>
+  </action>
+  <action name="toolbar_keyboard">
+   <property name="icon">
+    <iconset resource="../shadLauncher4.qrc">
+     <normaloff>:/images/keyboard_icon.png</normaloff>:/images/keyboard_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Keyboard</string>
+   </property>
+   <property name="toolTip">
+    <string>Configure Keyboard and Mouse</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionConfigure_Hotkeys">
+   <property name="text">
+    <string>Configure Hotkeys</string>
    </property>
   </action>
  </widget>
