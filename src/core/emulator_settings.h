@@ -107,6 +107,7 @@ struct GeneralSettings {
     Setting<std::string> log_filter{""};
     Setting<std::string> log_type{"sync"};
     Setting<bool> show_splash{false};
+    Setting<bool> identical_log_grouped{true};
     Setting<bool> connected_to_network{false};
     Setting<bool> discord_rpc_enabled{false};
     Setting<bool> show_fps_counter{false};
@@ -127,6 +128,8 @@ struct GeneralSettings {
                                            &GeneralSettings::trophy_notification_duration),
             make_override<GeneralSettings>("log_filter", &GeneralSettings::log_filter),
             make_override<GeneralSettings>("log_type", &GeneralSettings::log_type),
+            make_override<GeneralSettings>("identical_log_grouped",
+                                           &GeneralSettings::identical_log_grouped),
             make_override<GeneralSettings>("show_splash", &GeneralSettings::show_splash),
             make_override<GeneralSettings>("trophy_notification_side",
                                            &GeneralSettings::trophy_notification_side),
@@ -431,6 +434,7 @@ public:
     SETTING_FORWARD(m_general, TrophyNotificationDuration, trophy_notification_duration)
     SETTING_FORWARD(m_general, TrophyNotificationSide, trophy_notification_side)
     SETTING_FORWARD_BOOL(m_general, ShowSplash, show_splash)
+    SETTING_FORWARD_BOOL(m_general, IdenticalLogGrouped, identical_log_grouped)
     SETTING_FORWARD(m_general, AddonInstallDir, addon_install_dir)
     SETTING_FORWARD(m_general, LogFilter, log_filter)
     SETTING_FORWARD(m_general, LogType, log_type)
