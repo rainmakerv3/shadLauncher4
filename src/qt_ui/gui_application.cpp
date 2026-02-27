@@ -31,8 +31,7 @@ GUIApplication::GUIApplication(int& argc, char** argv) : QApplication(argc, argv
 
 GUIApplication::~GUIApplication() {}
 
-bool GUIApplication::init() {
-
+bool GUIApplication::init(QString emulator_arg, QString game_arg) {
     m_gui_settings = std::make_shared<GUISettings>();
     m_emu_settings = std::make_shared<EmulatorSettings>();
     m_emu_settings->Load();
@@ -63,7 +62,11 @@ bool GUIApplication::init() {
         dlg.exec();
     }
 
-    m_main_window->init();
+    if (!emulator_arg.isEmpty() && !game_arg.isEmpty()) {
+        m_main_window->StartEmulatorExecutable(emulator_arg, game_arg);
+    } else {
+        m_main_window->init();
+    }
 
     return true;
 }

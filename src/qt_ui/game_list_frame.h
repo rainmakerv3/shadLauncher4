@@ -62,6 +62,12 @@ public:
     void CheckCompatibilityAtStartup();
     void PlayBackgroundMusic(game_info game);
     bool RemoveCustomConfiguration(const QString& serial, const game_info& game);
+    void requestShortcut(const GameInfo& currentInfo, QString emuPath = "");
+    bool convertPngToIco(const QString& pngFilePath, const QString& icoFilePath);
+#ifdef _WIN32
+    bool createShortcutWin(const QString& linkPath, const QString& targetPath,
+                           const QString& iconPath, const QString& exePath, QString emuPath);
+#endif
 
     QImage backgroundImage;
 public Q_SLOTS:
