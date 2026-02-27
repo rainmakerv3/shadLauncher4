@@ -56,6 +56,7 @@ public Q_SLOTS:
     void PauseGame();
     void StopGame();
     void ToggleFullscreen();
+    void StartEmulatorExecutable(QString emulatorArg, QString gameArg);
 
 private Q_SLOTS:
     void saveWindowState() const;
@@ -89,7 +90,7 @@ private:
     QActionGroup* m_list_mode_act_group = nullptr;
 
     // IPC things
-    std::shared_ptr<IpcClient> m_ipc_client = std::make_shared<IpcClient>();
+    std::shared_ptr<IpcClient> m_ipc_client;
     game_info last_game_info;
     bool is_paused;
 };
