@@ -1379,6 +1379,22 @@ Se va a utilizar la base de datos local.
       <source>Failed to convert icon.</source>
       <translation>Error al convertir el icono.</translation>
     </message>
+    <message>
+      <source>&amp;Launch game</source>
+      <translation>&amp;Iniciar juego</translation>
+    </message>
+    <message>
+      <source>&amp;Launch game with current settings</source>
+      <translation>&amp;Iniciar juego con configuración actual</translation>
+    </message>
+    <message>
+      <source>&amp;Launch game with default settings</source>
+      <translation>&amp;Iniciar juego con configuración predeterminada</translation>
+    </message>
+    <message>
+      <source>&amp;Launch game with global settings</source>
+      <translation>&amp;Iniciar juego con configuración global</translation>
+    </message>
   </context>
   <context>
     <name>GameListGrid</name>

@@ -1379,6 +1379,22 @@ Using local database.
       <source>Failed to convert icon.</source>
       <translation>Не вдалося конвертувати значок.</translation>
     </message>
+    <message>
+      <source>&amp;Launch game</source>
+      <translation>&amp;Запустити гру</translation>
+    </message>
+    <message>
+      <source>&amp;Launch game with current settings</source>
+      <translation>&amp;Запустити гру з поточними параметрами</translation>
+    </message>
+    <message>
+      <source>&amp;Launch game with default settings</source>
+      <translation>&amp;Запустити гру з типовими параметрами</translation>
+    </message>
+    <message>
+      <source>&amp;Launch game with global settings</source>
+      <translation>&amp;Запустити гру з глобальними параметрами</translation>
+    </message>
   </context>
   <context>
     <name>GameListGrid</name>
