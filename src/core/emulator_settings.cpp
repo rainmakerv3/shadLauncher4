@@ -7,7 +7,6 @@
 #include <map>
 #include <common/path_util.h>
 #include <common/scm_rev.h>
-#include <toml.hpp>
 #include "common/logging/log.h"
 #include "emulator_settings.h"
 #include "emulator_state.h"
@@ -32,7 +31,7 @@ struct adl_serializer<std::filesystem::path> {
     }
 };
 } // namespace nlohmann
-
+#if 0
 namespace toml {
 // why is it so hard to avoid exceptions with this library
 template <typename T>
@@ -76,7 +75,7 @@ std::optional<T> get_optional(const toml::value& v, const std::string& key) {
 }
 
 } // namespace toml
-
+#endif
 // ── Helpers ───────────────────────────────────────────────────────────
 
 void EmulatorSettingsImpl::PrintChangedSummary(const std::vector<std::string>& changed) {
@@ -458,7 +457,7 @@ void EmulatorSettingsImpl::SetDefaultValues() {
     m_gpu = GPUSettings{};
     m_vulkan = VulkanSettings{};
 }
-
+#if 0
 bool EmulatorSettingsImpl::TransferSettings() {
     toml::value og_data;
     json new_data = json::object();
@@ -630,7 +629,7 @@ bool EmulatorSettingsImpl::TransferSettings() {
 
     return true;
 }
-
+#endif
 std::vector<std::string> EmulatorSettingsImpl::GetAllOverrideableKeys() const {
     std::vector<std::string> keys;
     auto addGroup = [&keys](const auto& fields) {

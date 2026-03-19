@@ -14,7 +14,7 @@
 #include "core/ipc/ipc_client.h"
 #include "gui_game_info.h"
 
-class EmulatorSettings;
+class EmulatorSettingsImpl;
 class GUISettings;
 class PersistentSettings;
 class GameListFrame;
@@ -33,7 +33,7 @@ class MainWindow : public QMainWindow {
 
 public:
     MainWindow(std::shared_ptr<GUISettings> gui_settings,
-               std::shared_ptr<EmulatorSettings> emu_settings,
+               std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                std::shared_ptr<PersistentSettings> persistent_settings,
                std::shared_ptr<IpcClient> ipc_client, QWidget* parent = nullptr);
     ~MainWindow();
@@ -85,7 +85,7 @@ private:
     void RestartEmulator();
 
     std::shared_ptr<GUISettings> m_gui_settings;
-    std::shared_ptr<EmulatorSettings> m_emu_settings;
+    std::shared_ptr<EmulatorSettingsImpl> m_emu_settings;
     std::shared_ptr<PersistentSettings> m_persistent_settings;
     QMainWindow* m_mw = nullptr;
     GameListFrame* m_game_list_frame = nullptr;

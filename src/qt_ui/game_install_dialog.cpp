@@ -12,7 +12,7 @@
 #include "ui_game_install_dialog.h"
 
 GameInstallDialog::GameInstallDialog(std::shared_ptr<GUISettings> gui_settings,
-                                     std::shared_ptr<EmulatorSettings> emu_settings,
+                                     std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                                      QWidget* parent)
     : QDialog(parent), ui(new Ui::GameInstallDialog), m_gui_settings(std::move(gui_settings)),
       m_emu_settings(std::move(emu_settings)) {

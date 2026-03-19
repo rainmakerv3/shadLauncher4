@@ -13,7 +13,7 @@
 class EditorDialog : public QDialog {
     Q_OBJECT
 public:
-    explicit EditorDialog(std::shared_ptr<EmulatorSettings> emu_settings,
+    explicit EditorDialog(std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                           QWidget* parent = nullptr); // Constructor
 
 protected:
@@ -28,7 +28,7 @@ private:
 
     QComboBox* gameComboBox; // Combo box for selecting game configurations
 
-    std::shared_ptr<EmulatorSettings> m_emu_settings;
+    std::shared_ptr<EmulatorSettingsImpl> m_emu_settings;
 
     void loadFile(QString game); // Function to load the config file
     void saveFile(QString game); // Function to save the config file

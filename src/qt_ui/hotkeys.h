@@ -28,7 +28,7 @@ class Hotkeys : public QDialog {
     Q_OBJECT
 
 public:
-    explicit Hotkeys(std::shared_ptr<EmulatorSettings> emu_settings,
+    explicit Hotkeys(std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                      std::shared_ptr<IpcClient> ipc_client, bool GameRunning,
                      QWidget* parent = nullptr);
     ~Hotkeys();
@@ -51,7 +51,7 @@ private:
     void Cleanup();
 
     std::shared_ptr<IpcClient> m_ipc_client;
-    std::shared_ptr<EmulatorSettings> m_emu_settings;
+    std::shared_ptr<EmulatorSettingsImpl> m_emu_settings;
 
     bool GameRunning;
     bool EnablePadMapping = false;

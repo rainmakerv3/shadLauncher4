@@ -19,8 +19,8 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
-PkgInstallDirSelectDialog::PkgInstallDirSelectDialog(std::shared_ptr<EmulatorSettings> emu_settings,
-                                                     QWidget* parent)
+PkgInstallDirSelectDialog::PkgInstallDirSelectDialog(
+    std::shared_ptr<EmulatorSettingsImpl> emu_settings, QWidget* parent)
     : QDialog(parent), m_emu_settings(std::move(emu_settings)) {
 
     const auto install_dirs = m_emu_settings->GetGameInstallDirs();

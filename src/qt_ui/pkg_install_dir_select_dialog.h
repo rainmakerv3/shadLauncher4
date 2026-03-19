@@ -11,7 +11,7 @@
 #include <memory>
 #include <vector>
 
-class EmulatorSettings;
+class EmulatorSettingsImpl;
 class QDialogButtonBox;
 class PkgInstallModel;
 struct PkgInfo;
@@ -20,7 +20,7 @@ class PkgInstallDirSelectDialog final : public QDialog {
     Q_OBJECT
 
 public:
-    explicit PkgInstallDirSelectDialog(std::shared_ptr<EmulatorSettings> emu_settings,
+    explicit PkgInstallDirSelectDialog(std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                                        QWidget* parent = nullptr);
     ~PkgInstallDirSelectDialog() override;
 
@@ -53,6 +53,6 @@ private:
     // --- Data ---
     std::vector<PkgInfo> m_pkgs;
     std::filesystem::path m_selected_dir;
-    std::shared_ptr<EmulatorSettings> m_emu_settings;
+    std::shared_ptr<EmulatorSettingsImpl> m_emu_settings;
     bool m_delete_file_on_install{false};
 };
