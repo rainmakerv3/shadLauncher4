@@ -35,7 +35,7 @@
 #include "version_dialog.h"
 
 MainWindow::MainWindow(std::shared_ptr<GUISettings> gui_settings,
-                       std::shared_ptr<EmulatorSettings> emu_settings,
+                       std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                        std::shared_ptr<PersistentSettings> persistent_settings,
                        std::shared_ptr<IpcClient> ipc_client, QWidget* parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), m_gui_settings(gui_settings),

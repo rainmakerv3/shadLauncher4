@@ -164,6 +164,8 @@ set(COMMON src/common/types.h
 
 set(CORE src/core/user_manager.cpp
          src/core/user_manager.h
+         src/core/user_settings.cpp
+         src/core/user_settings.h
           src/core/emulator_settings.cpp
           src/core/emulator_settings.h
           src/core/ipc/ipc_client.cpp
