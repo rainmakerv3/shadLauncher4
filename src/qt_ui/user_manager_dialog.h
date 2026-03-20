@@ -9,8 +9,6 @@
 #include <QDialog>
 #include <QTableWidget>
 
-#include "core/user_manager.h"
-
 class GUISettings;
 class EmulatorSettingsImpl;
 
