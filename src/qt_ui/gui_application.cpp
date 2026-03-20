@@ -5,6 +5,7 @@
 #include <QDebug>
 #include <QStyleHints>
 #include <core/libraries/system/system_service.h>
+#include <core/user_settings.h>
 #include <qfontdatabase.h>
 #include <qlibraryinfo.h>
 #include <qregularexpression.h>
@@ -33,16 +34,17 @@ GUIApplication::~GUIApplication() {}
 
 bool GUIApplication::init(QString emulator_arg, QString game_arg, QStringList passed_args) {
     m_gui_settings = std::make_shared<GUISettings>();
-    m_emu_settings = std::make_shared<EmulatorSettings>();
+    m_emu_settings = std::make_shared<EmulatorSettingsImpl>();
     m_emu_settings->Load();
     m_persistent_settings = std::make_shared<PersistentSettings>();
     m_ipc_client = std::make_shared<IpcClient>();
     m_emu_state = std::make_shared<EmulatorState>();
     EmulatorState::SetInstance(m_emu_state);
-    EmulatorSettings::SetInstance(m_emu_settings); // initialize singleton instance
+    EmulatorSettingsImpl::SetInstance(m_emu_settings); // initialize singleton instance
     std::shared_ptr<KeyManager> m_key_manager = std::make_shared<KeyManager>();
     KeyManager::SetInstance(m_key_manager); // initialize singleton instance
     m_key_manager->LoadFromFile();          // load keys
+    UserSettings.Load();
 
     m_main_window = new MainWindow(m_gui_settings, m_emu_settings, m_persistent_settings,
                                    m_ipc_client, nullptr);
@@ -130,8 +132,8 @@ void GUIApplication::loadLanguage(const QString& language_code) {
     m_gui_settings->SetValue(GUI::localization_language, m_language_code);
 
     qDebug() << "Current language changed to" << locale_name << "(" << language_code << ")";
-    EmulatorSettings::GetInstance()->SetConsoleLanguage(m_language_id);
-    EmulatorSettings::GetInstance()->Save();
+    EmulatorSettings.SetConsoleLanguage(m_language_id);
+    EmulatorSettings.Save();
 }
 
 QStringList GUIApplication::getAvailableLanguageCodes() {

@@ -26,7 +26,7 @@ QString previous_game = "default";
 bool isHelpOpen = false;
 HelpDialog* helpDialog;
 
-EditorDialog::EditorDialog(std::shared_ptr<EmulatorSettings> emu_settings, QWidget* parent)
+EditorDialog::EditorDialog(std::shared_ptr<EmulatorSettingsImpl> emu_settings, QWidget* parent)
     : QDialog(parent), m_emu_settings(std::move(emu_settings)) {
 
     setWindowTitle(tr("Edit Keyboard + Mouse and Controller input bindings"));

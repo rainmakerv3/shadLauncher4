@@ -14,7 +14,7 @@
 #include "sdl_event_wrapper.h"
 #include "ui_hotkeys.h"
 
-Hotkeys::Hotkeys(std::shared_ptr<EmulatorSettings> emu_settings,
+Hotkeys::Hotkeys(std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                  std::shared_ptr<IpcClient> ipc_client, bool isGameRunning, QWidget* parent)
     : QDialog(parent), m_emu_settings(std::move(emu_settings)), m_ipc_client(ipc_client),
       GameRunning(isGameRunning), ui(new Ui::Hotkeys) {

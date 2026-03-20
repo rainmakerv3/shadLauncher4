@@ -12,7 +12,7 @@
 #include "core/ipc/ipc_client.h"
 
 class GUISettings;
-class EmulatorSettings;
+class EmulatorSettingsImpl;
 class GameInfo;
 
 namespace Ui {
@@ -23,7 +23,7 @@ class SettingsDialog : public QDialog {
     Q_OBJECT
 public:
     explicit SettingsDialog(std::shared_ptr<GUISettings> gui_settings,
-                            std::shared_ptr<EmulatorSettings> emu_settings,
+                            std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                             std::shared_ptr<IpcClient> ipc_client, int tab_index = 0,
                             QWidget* parent = nullptr, const GameInfo* game = nullptr,
                             bool customFromGlobal = false);
@@ -48,9 +48,9 @@ private:
         return (!m_custom_settings_from_global);
     }
 
-    std::shared_ptr<EmulatorSettings> m_game_specific_settings;
-    std::shared_ptr<EmulatorSettings> m_emu_settings;
-    std::shared_ptr<EmulatorSettings> m_original_settings;
+    std::shared_ptr<EmulatorSettingsImpl> m_game_specific_settings;
+    std::shared_ptr<EmulatorSettingsImpl> m_emu_settings;
+    std::shared_ptr<EmulatorSettingsImpl> m_original_settings;
 
     // help texts
     QString m_description;

@@ -12,14 +12,14 @@ class GameInstallDialog;
 }
 
 class GUISettings;
-class EmulatorSettings;
+class EmulatorSettingsImpl;
 
 class GameInstallDialog : public QDialog {
     Q_OBJECT
 
 public:
     explicit GameInstallDialog(std::shared_ptr<GUISettings> gui_settings,
-                               std::shared_ptr<EmulatorSettings> emu_settings,
+                               std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                                QWidget* parent = nullptr);
     ~GameInstallDialog() override;
 
@@ -33,5 +33,5 @@ private:
     Ui::GameInstallDialog* ui;
 
     std::shared_ptr<GUISettings> m_gui_settings;
-    std::shared_ptr<EmulatorSettings> m_emu_settings;
+    std::shared_ptr<EmulatorSettingsImpl> m_emu_settings;
 };

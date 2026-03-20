@@ -19,6 +19,7 @@
 #include <QPushButton>
 #include <QScrollBar>
 #include <QtConcurrent>
+#include <core/user_settings.h>
 #include <fmt/core.h>
 #include "background_music_player.h"
 #include "change_log_dialog.h"
@@ -58,7 +59,7 @@
 #include "sfo_viewer_dialog.h"
 
 GameListFrame::GameListFrame(std::shared_ptr<GUISettings> gui_settings,
-                             std::shared_ptr<EmulatorSettings> emu_settings,
+                             std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                              std::shared_ptr<PersistentSettings> persistent_settings,
                              std::shared_ptr<IpcClient> ipc_client, QWidget* parent)
     : CustomDockWidget(tr("Game List"), parent), m_gui_settings(std::move(gui_settings)),
@@ -1617,7 +1618,7 @@ void GameListFrame::ShowContextMenu(const QPoint& pos) {
     });
 
     QMenu* trophy_viewer = menu.addMenu(tr("&Trophy Viewer"));
-    const auto valid_users = m_emu_settings->GetUserManager().GetValidUsers();
+    const auto valid_users = UserManagement.GetValidUsers();
     for (const auto& user : valid_users) {
         QString user_label =
             QString("%1 (ID: %2)").arg(QString::fromStdString(user.user_name)).arg(user.user_id);

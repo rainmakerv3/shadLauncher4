@@ -28,7 +28,7 @@ class KBMSettings : public QDialog {
     Q_OBJECT
 public:
     explicit KBMSettings(std::vector<game_info> game_info,
-                         std::shared_ptr<EmulatorSettings> emu_settings,
+                         std::shared_ptr<EmulatorSettingsImpl> emu_settings,
                          std::shared_ptr<IpcClient> ipc_client, bool GameRunning,
                          std::string GameRunningSerial, QWidget* parent = nullptr);
     ~KBMSettings();
@@ -45,7 +45,7 @@ private Q_SLOTS:
 
 private:
     std::unique_ptr<Ui::KBMSettings> ui;
-    std::shared_ptr<EmulatorSettings> m_emu_settings;
+    std::shared_ptr<EmulatorSettingsImpl> m_emu_settings;
     std::shared_ptr<IpcClient> m_ipc_client;
     const std::vector<game_info> m_game_info;
 
