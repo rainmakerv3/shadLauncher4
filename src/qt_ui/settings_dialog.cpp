@@ -587,16 +587,20 @@ bool SettingsDialog::IsGameFoldersChanged() const {
 }
 
 void SettingsDialog::ApplyValuesToBackend() {
+    const bool is_specific = !IsGlobal();
+
     std::vector<GameInstallDir> dirs;
     dirs.reserve(ui->gameFoldersListWidget->count());
 
     // ------------------ General tab --------------------------------------------------------
-    m_emu_settings->SetShowSplash(ui->showSplashCheckBox->isChecked());
-    m_emu_settings->SetVolumeSlider(ui->horizontalVolumeSlider->value());
-    m_emu_settings->SetSDLMainOutputDevice(ui->GenAudioComboBox->currentText().toStdString());
-    m_emu_settings->SetSDLPadSpkOutputDevice(ui->DsAudioComboBox->currentText().toStdString());
-    m_emu_settings->SetTrophyPopupDisabled(ui->disableTrophycheckBox->isChecked());
-    m_emu_settings->SetTrophyNotificationDuration(ui->popUpDurationSpinBox->value());
+    m_emu_settings->SetShowSplash(ui->showSplashCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetVolumeSlider(ui->horizontalVolumeSlider->value(), is_specific);
+    m_emu_settings->SetSDLMainOutputDevice(ui->GenAudioComboBox->currentText().toStdString(),
+                                           is_specific);
+    m_emu_settings->SetSDLPadSpkOutputDevice(ui->DsAudioComboBox->currentText().toStdString(),
+                                             is_specific);
+    m_emu_settings->SetTrophyPopupDisabled(ui->disableTrophycheckBox->isChecked(), is_specific);
+    m_emu_settings->SetTrophyNotificationDuration(ui->popUpDurationSpinBox->value(), is_specific);
 
     std::string trophy_loc;
     if (ui->radioButton_Top->isChecked()) {
@@ -608,8 +612,8 @@ void SettingsDialog::ApplyValuesToBackend() {
     } else if (ui->radioButton_Bottom->isChecked()) {
         trophy_loc = "bottom";
     }
-    m_emu_settings->SetTrophyNotificationSide(trophy_loc);
-    m_emu_settings->SetShowFpsCounter(ui->showFpsCounterCheckBox->isChecked());
+    m_emu_settings->SetTrophyNotificationSide(trophy_loc, is_specific);
+    m_emu_settings->SetShowFpsCounter(ui->showFpsCounterCheckBox->isChecked(), is_specific);
 
     // ------------------ GUI tab --------------------------------------------------------
     m_emu_settings->SetDiscordRPCEnabled(ui->discordRPCCheckbox->isChecked());
@@ -633,68 +637,79 @@ void SettingsDialog::ApplyValuesToBackend() {
 
     // ------------------ Graphics tab --------------------------------------------------------
     bool isFullscreen = ui->displayModeComboBox->currentText() != tr("Windowed");
-    m_emu_settings->SetFullScreen(isFullscreen);
+    m_emu_settings->SetFullScreen(isFullscreen, is_specific);
     m_emu_settings->SetPresentMode(
-        presentModeMap.value(ui->presentModeComboBox->currentText()).toStdString());
+        presentModeMap.value(ui->presentModeComboBox->currentText()).toStdString(), is_specific);
     m_emu_settings->SetFullScreenMode(
-        screenModeMap.value(ui->displayModeComboBox->currentText()).toStdString());
+        screenModeMap.value(ui->displayModeComboBox->currentText()).toStdString(), is_specific);
 
-    m_emu_settings->SetWindowHeight(ui->heightSpinBox->value());
-    m_emu_settings->SetWindowWidth(ui->widthSpinBox->value());
-    m_emu_settings->SetHdrAllowed(ui->enableHDRCheckBox->isChecked());
+    m_emu_settings->SetWindowHeight(ui->heightSpinBox->value(), is_specific);
+    m_emu_settings->SetWindowWidth(ui->widthSpinBox->value(), is_specific);
+    m_emu_settings->SetHdrAllowed(ui->enableHDRCheckBox->isChecked(), is_specific);
 
-    m_emu_settings->SetFsrEnabled(ui->FSRCheckBox->isChecked());
-    m_emu_settings->SetRcasEnabled(ui->RCASCheckBox->isChecked());
-    m_emu_settings->SetRcasAttenuation(ui->RCASSlider->value());
+    m_emu_settings->SetFsrEnabled(ui->FSRCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetRcasEnabled(ui->RCASCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetRcasAttenuation(ui->RCASSlider->value(), is_specific);
 
     // First options is auto selection -1, so gpuId on the GUI will always have to subtract 1
     // when setting and add 1 when getting to select the correct gpu in Qt
-    m_emu_settings->SetGpuId(ui->graphicsAdapterBox->currentIndex() - 1);
+    m_emu_settings->SetGpuId(ui->graphicsAdapterBox->currentIndex() - 1, is_specific);
 
     // ------------------ Input tab --------------------------------------------------------
-    m_emu_settings->SetCursorState(cursorStateMap.value(ui->hideCursorComboBox->currentText()));
-    m_emu_settings->SetCursorHideTimeout(ui->idleTimeoutSpinBox->value());
-    m_emu_settings->SetSDLMicDevice(ui->micComboBox->currentText().toStdString());
-    m_emu_settings->SetUsbDeviceBackend(ui->usbComboBox->currentIndex());
-    m_emu_settings->SetMotionControlsEnabled(ui->motionControlsCheckBox->isChecked());
-    m_emu_settings->SetBackgroundControllerInput(ui->backgroundControllerCheckBox->isChecked());
+    m_emu_settings->SetCursorState(cursorStateMap.value(ui->hideCursorComboBox->currentText()),
+                                   is_specific);
+    m_emu_settings->SetCursorHideTimeout(ui->idleTimeoutSpinBox->value(), is_specific);
+    m_emu_settings->SetSDLMicDevice(ui->micComboBox->currentText().toStdString(), is_specific);
+    m_emu_settings->SetUsbDeviceBackend(ui->usbComboBox->currentIndex(), is_specific);
+    m_emu_settings->SetMotionControlsEnabled(ui->motionControlsCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetBackgroundControllerInput(ui->backgroundControllerCheckBox->isChecked(),
+                                                 is_specific);
 
     // ------------------ Log tab --------------------------------------------------------
-    m_emu_settings->SetLogFilter(ui->logFilterLineEdit->text().toStdString());
-    m_emu_settings->SetLogEnabled(ui->enableLoggingCheckBox->isChecked());
-    m_emu_settings->SetSeparateLoggingEnabled(ui->separateLogFilesCheckbox->isChecked());
+    m_emu_settings->SetLogFilter(ui->logFilterLineEdit->text().toStdString(), is_specific);
+    m_emu_settings->SetLogEnabled(ui->enableLoggingCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetSeparateLoggingEnabled(ui->separateLogFilesCheckbox->isChecked(),
+                                              is_specific);
     m_emu_settings->SetIdenticalLogGrouped(ui->identicalLogGroupedCheckbox->isChecked());
-    m_emu_settings->SetLogType(logTypeMap.value(ui->logTypeComboBox->currentText()).toStdString());
+    m_emu_settings->SetLogType(logTypeMap.value(ui->logTypeComboBox->currentText()).toStdString(),
+                               is_specific);
 
     // ------------------ Debug tab --------------------------------------------------------
-    m_emu_settings->SetRenderdocEnabled(ui->rdocCheckBox->isChecked());
-    m_emu_settings->SetDumpShaders(ui->dumpShadersCheckBox->isChecked());
-    m_emu_settings->SetDebugDump(ui->debugDump->isChecked());
-    m_emu_settings->SetCopyGpuBuffers(ui->copyGPUBuffersCheckBox->isChecked());
+    m_emu_settings->SetRenderdocEnabled(ui->rdocCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetDumpShaders(ui->dumpShadersCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetDebugDump(ui->debugDump->isChecked(), is_specific);
+    m_emu_settings->SetCopyGpuBuffers(ui->copyGPUBuffersCheckBox->isChecked(), is_specific);
 
-    m_emu_settings->SetVkValidationEnabled(ui->vkValidationCheckBox->isChecked());
-    m_emu_settings->SetVkValidationCoreEnabled(ui->vkCoreValidationCheckBox->isChecked());
-    m_emu_settings->SetVkValidationSyncEnabled(ui->vkSyncValidationCheckBox->isChecked());
-    m_emu_settings->SetVkValidationGpuEnabled(ui->vkGpuValidationCheckBox->isChecked());
+    m_emu_settings->SetVkValidationEnabled(ui->vkValidationCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetVkValidationCoreEnabled(ui->vkCoreValidationCheckBox->isChecked(),
+                                               is_specific);
+    m_emu_settings->SetVkValidationSyncEnabled(ui->vkSyncValidationCheckBox->isChecked(),
+                                               is_specific);
+    m_emu_settings->SetVkValidationGpuEnabled(ui->vkGpuValidationCheckBox->isChecked(),
+                                              is_specific);
 
-    m_emu_settings->SetShaderCollect(ui->collectShaderCheckBox->isChecked());
-    m_emu_settings->SetVkCrashDiagnosticEnabled(ui->crashDiagnosticsCheckBox->isChecked());
-    m_emu_settings->SetVkHostMarkersEnabled(ui->hostMarkersCheckBox->isChecked());
-    m_emu_settings->SetVkGuestMarkersEnabled(ui->guestMarkersCheckBox->isChecked());
+    m_emu_settings->SetShaderCollect(ui->collectShaderCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetVkCrashDiagnosticEnabled(ui->crashDiagnosticsCheckBox->isChecked(),
+                                                is_specific);
+    m_emu_settings->SetVkHostMarkersEnabled(ui->hostMarkersCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetVkGuestMarkersEnabled(ui->guestMarkersCheckBox->isChecked(), is_specific);
 
     // ------------------ Experimental tab --------------------------------------------------------
-    m_emu_settings->SetReadbacksMode(ui->readbacksModeComboBox->currentIndex());
-    m_emu_settings->SetReadbackLinearImagesEnabled(ui->readbackLinearImagesCheckBox->isChecked());
-    m_emu_settings->SetDirectMemoryAccessEnabled(ui->dmaCheckBox->isChecked());
-    m_emu_settings->SetDevKit(ui->devkitCheckBox->isChecked());
-    m_emu_settings->SetNeo(ui->neoCheckBox->isChecked());
-    m_emu_settings->SetPSNSignedIn(ui->psnSignInCheckBox->isChecked());
-    m_emu_settings->SetConnectedToNetwork(ui->networkConnectedCheckBox->isChecked());
+    m_emu_settings->SetReadbacksMode(ui->readbacksModeComboBox->currentIndex(), is_specific);
+    m_emu_settings->SetReadbackLinearImagesEnabled(ui->readbackLinearImagesCheckBox->isChecked(),
+                                                   is_specific);
+    m_emu_settings->SetDirectMemoryAccessEnabled(ui->dmaCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetDevKit(ui->devkitCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetNeo(ui->neoCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetPSNSignedIn(ui->psnSignInCheckBox->isChecked(), is_specific);
+    m_emu_settings->SetConnectedToNetwork(ui->networkConnectedCheckBox->isChecked(), is_specific);
 
-    m_emu_settings->SetPipelineCacheEnabled(ui->enableShaderCacheCheckBox->isChecked());
-    m_emu_settings->SetPipelineCacheArchived(ui->archiveShaderCacheCheckBox->isChecked());
-    m_emu_settings->SetExtraDmemInMBytes(ui->dmemSpinBox->value());
-    m_emu_settings->SetVblankFrequency(ui->vblankSpinBox->value());
+    m_emu_settings->SetPipelineCacheEnabled(ui->enableShaderCacheCheckBox->isChecked(),
+                                            is_specific);
+    m_emu_settings->SetPipelineCacheArchived(ui->archiveShaderCacheCheckBox->isChecked(),
+                                             is_specific);
+    m_emu_settings->SetExtraDmemInMBytes(ui->dmemSpinBox->value(), is_specific);
+    m_emu_settings->SetVblankFrequency(ui->vblankSpinBox->value(), is_specific);
 
     // ------------------ Paths tab --------------------------------------------------------
     for (int i = 0; i < ui->gameFoldersListWidget->count(); ++i) {
