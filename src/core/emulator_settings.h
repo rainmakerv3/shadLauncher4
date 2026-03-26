@@ -71,10 +71,13 @@ struct Setting {
         return value;
     }
 
-    /// Write v to the base layer.
-    /// Game-specific overrides are applied exclusively via Load(serial)
-    void set(const T& v) {
-        value = v;
+    /// Set proper value as base or game_specific
+    void set(const T& v, bool game_specific = false) {
+        if (game_specific) {
+            game_specific_value = v;
+        } else {
+            value = v;
+        }
     }
 
     /// Discard the game-specific override; subsequent get(Default) will
@@ -420,9 +423,8 @@ public:
     bool Save(const std::string& serial = "");
     bool Load(const std::string& serial = "");
     void SetDefaultValues();
-#if 0
     bool TransferSettings();
-#endif
+
     // Config mode
     ConfigMode GetConfigMode() const {
         return m_configMode;
@@ -522,16 +524,17 @@ public:
     auto Get##Name() const {                                                                       \
         return (group).field.get(m_configMode);                                                    \
     }                                                                                              \
-    void Set##Name(const decltype((group).field.value)& v) {                                       \
-        (group).field.value = v;                                                                   \
+    void Set##Name(const decltype((group).field.value)& v, bool specific = false) {                \
+        (group).field.set(v, specific);                                                            \
     }
 #define SETTING_FORWARD_BOOL(group, Name, field)                                                   \
     bool Is##Name() const {                                                                        \
         return (group).field.get(m_configMode);                                                    \
     }                                                                                              \
-    void Set##Name(bool v) {                                                                       \
-        (group).field.value = v;                                                                   \
+    void Set##Name(bool v, bool specific = false) {                                                \
+        (group).field.set(v, specific);                                                            \
     }
+
 #define SETTING_FORWARD_BOOL_READONLY(group, Name, field)                                          \
     bool Is##Name() const {                                                                        \
         return (group).field.get(m_configMode);                                                    \
@@ -593,16 +596,17 @@ public:
     SETTING_FORWARD_BOOL_READONLY(m_gpu, PatchShaders, patch_shaders)
 
     u32 GetVblankFrequency() {
-        if (m_gpu.vblank_frequency.value < 60) {
-            m_gpu.vblank_frequency.value = 60;
+        if (m_gpu.vblank_frequency.value < 30) {
+            return 30;
         }
-        return m_gpu.vblank_frequency.value;
+        return m_gpu.vblank_frequency.get();
     }
-    void SetVblankFrequency(const u32& v) {
-        if (v < 60) {
-            m_gpu.vblank_frequency.value = 60;
+    void SetVblankFrequency(const u32& v, bool is_specific = false) {
+        u32 val = v < 30 ? 30 : v;
+        if (is_specific) {
+            m_gpu.vblank_frequency.game_specific_value = val;
         } else {
-            m_gpu.vblank_frequency.value = v;
+            m_gpu.vblank_frequency.value = val;
         }
     }
 
