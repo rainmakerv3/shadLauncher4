@@ -51,12 +51,14 @@
 #include <winternl.h>
 #include <wrl/client.h>
 #endif
-#include <common/log_analyzer.h>
-#include <common/path_util.h>
+
 #include "cheats_patches_dialog.h"
+#include "common/log_analyzer.h"
+#include "common/path_util.h"
 #include "core/ipc/ipc_client.h"
 #include "settings_dialog.h"
 #include "sfo_viewer_dialog.h"
+#include "trophy_viewer.h"
 
 GameListFrame::GameListFrame(std::shared_ptr<GUISettings> gui_settings,
                              std::shared_ptr<EmulatorSettingsImpl> emu_settings,
@@ -1618,6 +1620,60 @@ void GameListFrame::ShowContextMenu(const QPoint& pos) {
     });
 
     QMenu* trophy_viewer = menu.addMenu(tr("&Trophy Viewer"));
+    QAction* user_action = trophy_viewer->addAction("User 1");
+    connect(user_action, &QAction::triggered, this, [this, current_game] {
+        if (m_game_data.empty()) {
+            QMessageBox::information(
+                this, tr("Trophy Viewer"),
+                tr("No games found. Please add your games to your library first."));
+            return;
+        }
+
+        QString trophyPath, gameTrpPath;
+        Common::FS::PathToQString(trophyPath, current_game.serial);
+        Common::FS::PathToQString(gameTrpPath, current_game.path);
+
+        auto game_update_path = Common::FS::PathFromQString(gameTrpPath);
+        game_update_path += "-UPDATE";
+        if (std::filesystem::exists(game_update_path)) {
+            Common::FS::PathToQString(gameTrpPath, game_update_path);
+        } else {
+            game_update_path = Common::FS::PathFromQString(gameTrpPath);
+            game_update_path += "-patch";
+            if (std::filesystem::exists(game_update_path)) {
+                Common::FS::PathToQString(gameTrpPath, game_update_path);
+            }
+        }
+
+        QVector<TrophyGameInfo> allTrophyGames;
+        for (const auto& game : m_game_data) {
+            TrophyGameInfo gameInfo;
+            gameInfo.name = QString::fromStdString(game->info.name);
+            Common::FS::PathToQString(gameInfo.trophyPath, game->info.serial);
+            Common::FS::PathToQString(gameInfo.gameTrpPath, game->info.path);
+
+            auto update_path = Common::FS::PathFromQString(gameInfo.gameTrpPath);
+            update_path += "-UPDATE";
+            if (std::filesystem::exists(update_path)) {
+                Common::FS::PathToQString(gameInfo.gameTrpPath, update_path);
+            } else {
+                update_path = Common::FS::PathFromQString(gameInfo.gameTrpPath);
+                update_path += "-patch";
+                if (std::filesystem::exists(update_path)) {
+                    Common::FS::PathToQString(gameInfo.gameTrpPath, update_path);
+                }
+            }
+
+            allTrophyGames.append(gameInfo);
+        }
+
+        QString gameName = QString::fromStdString(current_game.name);
+        TrophyViewer* trophyViewer =
+            new TrophyViewer(m_gui_settings, trophyPath, gameTrpPath, gameName, allTrophyGames);
+        trophyViewer->show();
+    });
+
+    /* TODO
     const auto valid_users = UserManagement.GetValidUsers();
     for (const auto& user : valid_users) {
         QString user_label =
@@ -1627,6 +1683,7 @@ void GameListFrame::ShowContextMenu(const QPoint& pos) {
 
         });
     }
+    */
 
     // Manage Game Menu
     QMenu* manage_game_menu = menu.addMenu(tr("&Manage Game"));
