@@ -40,6 +40,10 @@ path = [
     "src/images/keyboard_icon.png",
     "src/images/ps4_controller.png",
     "src/images/custom_config.png",
+    "src/images/bronze.png",
+    "src/images/gold.png",
+    "src/images/platinum.png",
+    "src/images/silver.png",
     "src/qt_ui/settings_dialog.ui",
     "src/qt_ui/game_install_dialog.ui",
     "src/qt_ui/cheats_patches_dialog.ui",
@@ -58,3 +62,8 @@ SPDX-License-Identifier = "BSL-1.0"
 path = "dist/qt.conf"
 SPDX-FileCopyrightText = "shadLauncher4 Project"
 SPDX-License-Identifier = "GPL-2.0-or-later"
+
+[[annotations]]
+path = "cmake/CMakeRC.cmake"
+SPDX-FileCopyrightText = "Copyright (c) 2017 vector-of-bool <vectorofbool@gmail.com>"
+SPDX-License-Identifier = "MIT"
