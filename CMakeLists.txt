@@ -126,6 +126,7 @@ set(COMMON src/common/types.h
            src/common/versions.h
            src/common/key_manager.cpp
            src/common/key_manager.h
+           src/common/aes.h
            src/common/logging/backend.cpp
            src/common/logging/backend.h
            src/common/logging/filter.cpp
@@ -310,6 +311,8 @@ set(QT_UI src/qt_ui/settings.cpp
           src/qt_ui/hotkeys.ui
           src/qt_ui/sdl_event_wrapper.cpp
           src/qt_ui/sdl_event_wrapper.h
+          src/qt_ui/trophy_viewer.cpp
+          src/qt_ui/trophy_viewer.h
           ${UPDATER}
 )
 
@@ -324,6 +327,16 @@ configure_file(
 )
 
 target_include_directories(shadLauncher4 PRIVATE ${CMAKE_BINARY_DIR}/generated)
+
+include("${CMAKE_CURRENT_SOURCE_DIR}/cmake/CMakeRC.cmake")
+cmrc_add_resource_library(embedded-resources
+        ALIAS res::embedded
+        NAMESPACE res
+        src/images/bronze.png
+        src/images/gold.png
+        src/images/platinum.png
+        src/images/silver.png)
+target_link_libraries(shadLauncher4 PRIVATE res::embedded)
 
 target_link_libraries(shadLauncher4 PRIVATE fmt::fmt Qt6::Widgets Qt6::Concurrent Qt6::Xml Qt6::Network Qt6::Multimedia nlohmann_json::nlohmann_json libdeflate_static)
 if (ENABLE_UPDATER)
