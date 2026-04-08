@@ -1395,6 +1395,14 @@ Se va a utilizar la base de datos local.
       <source>&amp;Launch game with global settings</source>
       <translation>&amp;Iniciar juego con configuración global</translation>
     </message>
+    <message>
+      <source>Trophy Viewer</source>
+      <translation>Visualizador de trofeos</translation>
+    </message>
+    <message>
+      <source>No games found. Please add your games to your library first.</source>
+      <translation>No se han encontrado juegos. Primero tienes que añadir tus juegos a la biblioteca.</translation>
+    </message>
   </context>
   <context>
     <name>GameListGrid</name>
@@ -3325,6 +3333,14 @@ Se eliminarán todos los ajustes específicos para cada juego.</translation>
       <source>Precise</source>
       <translation>Precisas</translation>
     </message>
+    <message>
+      <source>Audio Backend</source>
+      <translation>«Back-end» de audio</translation>
+    </message>
+    <message>
+      <source>Camera Device</source>
+      <translation>Dispositivo de cámara</translation>
+    </message>
   </context>
   <context>
     <name>SettingsDialogHelperTexts</name>
@@ -3391,6 +3407,33 @@ Se eliminarán todos los ajustes específicos para cada juego.</translation>
     <message>
       <source>Readback Mode:\nControls how the emulator handles GPU readbacks.Enabled them with make some games work better.\nDisabled is recommended option\nRelaxed is same as Precised but uses less fence protection,but can give more fps\nPrecise mode should be used for maximum compatibility where readbacks are neccesary</source>
       <translation>Modo de lecturas diferidas:\nControla el modo con el que el emulador hará lecturas diferidas con la GPU. Activa esta opción para hacer que algunos juegos funcionen mejor.\nDesactivadas es la opción recomendada.\nRelajadas es igual que Precisas, pero tiene menos protecciones. Podría aumentar los FPS.\nEl modo preciso debería utilizarse para maximizar la compatibilidad en aquellos casos donde sea necesario controlar las lecturas diferidas.</translation>
+    </message>
+  </context>
+  <context>
+    <name>TrophyViewer</name>
+    <message>
+      <source>Progress</source>
+      <translation>Progreso</translation>
+    </message>
+    <message>
+      <source>Trophy Viewer</source>
+      <translation>Visualizador de trofeos</translation>
+    </message>
+    <message>
+      <source>Select Game:</source>
+      <translation>Selecciona un juego:</translation>
+    </message>
+    <message>
+      <source>Show Earned Trophies</source>
+      <translation>Mostrar trofeos ganados</translation>
+    </message>
+    <message>
+      <source>Show Not Earned Trophies</source>
+      <translation>Mostrar trofeos no ganados</translation>
+    </message>
+    <message>
+      <source>Show Hidden Trophies</source>
+      <translation>Mostrar trofeos ocultos</translation>
     </message>
   </context>
   <context>

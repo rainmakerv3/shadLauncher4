@@ -1393,6 +1393,14 @@ Using local database.
       <source>&amp;Launch game with global settings</source>
       <translation>&amp;Запустить игру с глобальными настройками</translation>
     </message>
+    <message>
+      <source>Trophy Viewer</source>
+      <translation>Просмотр трофеев</translation>
+    </message>
+    <message>
+      <source>No games found. Please add your games to your library first.</source>
+      <translation>Игры не найдены. Пожалуйста, сначала добавьте свои игры в библиотеку.</translation>
+    </message>
   </context>
   <context>
     <name>GameListGrid</name>
@@ -3331,6 +3339,14 @@ This will remove all game-specific overrides.</source>
       <source>Precise</source>
       <translation>Точный</translation>
     </message>
+    <message>
+      <source>Audio Backend</source>
+      <translation>Бэкенд аудио</translation>
+    </message>
+    <message>
+      <source>Camera Device</source>
+      <translation>Камера</translation>
+    </message>
   </context>
   <context>
     <name>SettingsDialogHelperTexts</name>
@@ -3397,6 +3413,33 @@ This will remove all game-specific overrides.</source>
     <message>
       <source>Readback Mode:\nControls how the emulator handles GPU readbacks.Enabled them with make some games work better.\nDisabled is recommended option\nRelaxed is same as Precised but uses less fence protection,but can give more fps\nPrecise mode should be used for maximum compatibility where readbacks are neccesary</source>
       <translation>Режим считывания:\nУправляет тем, как эмулятор обрабатывает считывания с графического процессора. Включение этого режима улучшит работу некоторых игр.\nРекомендуется отключить.\nРежим Relaxed аналогичен Precised, но использует меньше защиты от прерываний, однако может обеспечить более высокую частоту кадров.\nРежим Precise следует использовать для максимальной совместимости там, где необходимы считывания.</translation>
+    </message>
+  </context>
+  <context>
+    <name>TrophyViewer</name>
+    <message>
+      <source>Progress</source>
+      <translation>Прогресс</translation>
+    </message>
+    <message>
+      <source>Trophy Viewer</source>
+      <translation>Просмотр трофеев</translation>
+    </message>
+    <message>
+      <source>Select Game:</source>
+      <translation>Выберите игру:</translation>
+    </message>
+    <message>
+      <source>Show Earned Trophies</source>
+      <translation>Показать заработанные трофеи</translation>
+    </message>
+    <message>
+      <source>Show Not Earned Trophies</source>
+      <translation>Показать не заработанные трофеи</translation>
+    </message>
+    <message>
+      <source>Show Hidden Trophies</source>
+      <translation>Показать скрытые трофеи</translation>
     </message>
   </context>
   <context>

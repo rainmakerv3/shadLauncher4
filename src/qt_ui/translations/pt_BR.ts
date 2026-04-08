@@ -1395,6 +1395,14 @@ Utilizando o banco de dados local.
       <source>&amp;Launch game with global settings</source>
       <translation>&amp;Iniciar jogo com configurações globais</translation>
     </message>
+    <message>
+      <source>Trophy Viewer</source>
+      <translation>Visualizador de Troféus</translation>
+    </message>
+    <message>
+      <source>No games found. Please add your games to your library first.</source>
+      <translation>Nenhum jogo encontrado. Por favor, adicione os jogos à sua biblioteca primeiro.</translation>
+    </message>
   </context>
   <context>
     <name>GameListGrid</name>
@@ -3325,6 +3333,14 @@ Isso irá sobrescrever todas as configurações específicas do jogo.</translati
       <source>Precise</source>
       <translation>Rigoroso</translation>
     </message>
+    <message>
+      <source>Audio Backend</source>
+      <translation>Backend de Áudio</translation>
+    </message>
+    <message>
+      <source>Camera Device</source>
+      <translation>Dispositivo de Câmera</translation>
+    </message>
   </context>
   <context>
     <name>SettingsDialogHelperTexts</name>
@@ -3391,6 +3407,33 @@ Isso irá sobrescrever todas as configurações específicas do jogo.</translati
     <message>
       <source>Readback Mode:\nControls how the emulator handles GPU readbacks.Enabled them with make some games work better.\nDisabled is recommended option\nRelaxed is same as Precised but uses less fence protection,but can give more fps\nPrecise mode should be used for maximum compatibility where readbacks are neccesary</source>
       <translation>Modo Readback:\nControla como o emulador lida com as readbacks da GPU .Habilitado pode fazer alguns jogos funcionarem melhor.\nDesativado é opção recomendada\nAtenuado é o mesmo que Rigoroso, mas usa menos proteção de barreira e pode fornecer mais fps\nModo Rigoroso deve ser usado para máxima compatibilidade quando readbacks são necessários</translation>
+    </message>
+  </context>
+  <context>
+    <name>TrophyViewer</name>
+    <message>
+      <source>Progress</source>
+      <translation>Progresso</translation>
+    </message>
+    <message>
+      <source>Trophy Viewer</source>
+      <translation>Visualizador de Troféus</translation>
+    </message>
+    <message>
+      <source>Select Game:</source>
+      <translation>Selecionar Jogo:</translation>
+    </message>
+    <message>
+      <source>Show Earned Trophies</source>
+      <translation>Mostrar Troféus Conquistados</translation>
+    </message>
+    <message>
+      <source>Show Not Earned Trophies</source>
+      <translation>Mostrar Troféus Não Conquistados</translation>
+    </message>
+    <message>
+      <source>Show Hidden Trophies</source>
+      <translation>Mostrar Troféus Ocultos</translation>
     </message>
   </context>
   <context>
@@ -3794,11 +3837,11 @@ A versão de pré-lançamento foi salva em: %1</translation>
     </message>
     <message>
       <source>Executable (*);;Zip Archive (*.zip)</source>
-      <translation>Executável (*.exe);;Arquivo Zip (*.zip)</translation>
+      <translation>Executável (*);;Arquivo Zip (*.zip)</translation>
     </message>
     <message>
       <source>Executable (*.*);;Zip Archive (*.zip)</source>
-      <translation>Executável (*.exe);;Arquivo Zip (*.zip)</translation>
+      <translation>Executável (*.*);;Arquivo Zip (*.zip)</translation>
     </message>
     <message>
       <source>Select executable or zip file</source>
