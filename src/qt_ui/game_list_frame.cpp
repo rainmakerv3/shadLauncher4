@@ -23,6 +23,7 @@
 #include <fmt/core.h>
 #include "background_music_player.h"
 #include "change_log_dialog.h"
+#include "common/key_manager.h"
 #include "common/singleton.h"
 #include "core/emulator_settings.h"
 #include "core/file_format/psf.h"
@@ -1622,6 +1623,17 @@ void GameListFrame::ShowContextMenu(const QPoint& pos) {
 
     QAction* trophy_viewer = menu.addAction(tr("&Trophy Viewer"));
     connect(trophy_viewer, &QAction::triggered, this, [this, current_game] {
+        const auto& user_key_vec =
+            KeyManager::GetInstance()->GetAllKeys().TrophyKeySet.ReleaseTrophyKey;
+
+        if (user_key_vec.size() != 16) {
+            // turn clang format off to maintain one string line for easy translations
+            // clang-format off
+            QMessageBox::critical(nullptr, tr("Error"), tr("A trophy key is required to use the Trophy Viewer. This can be inputted by clicking Utilities - Crypto Key Manager"));
+            // clang-format on
+            return;
+        }
+
         if (m_game_data.empty()) {
             QMessageBox::information(
                 this, tr("Trophy Viewer"),
