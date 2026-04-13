@@ -7,8 +7,6 @@
 #include "common/path_util.h"
 #include "core/file_format/trp.h"
 
-#include <QMessageBox>
-
 static void DecryptEFSM(std::span<const u8, 16> trophyKey, std::span<const u8, 16> NPcommID,
                         std::span<const u8, 16> efsmIv, std::span<const u8> ciphertext,
                         std::span<u8> decrypted) {
